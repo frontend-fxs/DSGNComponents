@@ -23,7 +23,7 @@ const users = [
 const siteConfig = {
   title: 'DSGN Department Components', // Title for your website.
   tagline: 'Design department components showroom',
-    url: 'https://frontend-fxs.github.io', // Your website URL
+  url: 'https://frontend-fxs.github.io', // Your website URL
   baseUrl: '/DSGNComponents/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -38,39 +38,32 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    {doc: 'doc1', label: 'Our Components Documentation'},
+    /* {doc: 'doc4', label: 'API'},
+    {page: 'help', label: 'Help'}, */
+    {blog: false, label: 'Blog'},
   ],
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
+  headerIcon: 'img/fxs_logo_social_transparent.svg',
+    footerIcon: 'img/fxs_logo_social_transparent.svg',
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#3c7baf',
-    secondaryColor: '#2a567a',
+      primaryColor: '#49494f',
+      secondaryColor: '#e4871b',
   },
 
   /* Custom fonts for website */
-  /*
   fonts: {
     myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
+      "Roboto",
     ]
   },
-  */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} FXStComponents showroomreet`,

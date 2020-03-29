@@ -6,6 +6,10 @@
  */
  
 /* your custom css */
+.navigationSlider .slidingNav ul,
+.fixedHeaderContainer{
+    background-color: #242d38;
+}
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
