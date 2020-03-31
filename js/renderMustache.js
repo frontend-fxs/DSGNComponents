@@ -1,6 +1,6 @@
 function renderMustache(datap,templatep,id){
-    const data = fetch('../json/'+datap).then(response => response.json());
-    const template = fetch('../templates/'+templatep).then(response => response.text());
+    const data = fetch('./json/'+datap).then(response => response.json());
+    const template = fetch('./templates/'+templatep).then(response => response.text());
     Promise.all([data, template])
         .then(response => {
             resolvedData = response[0];
