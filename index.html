@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8" />
+    <meta property="fb:app_id" content="165130350199320" />
+    <meta name="msapplication-TileImage"
+        content="https://staticcontent.fxstreet.com/website/static-html/mstile-144x144.png">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <link rel="icon" type="image/x-icon" href="https://staticcontent.fxstreet.com/website/static-html/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://staticcontent.fxstreet.com/website/static-html/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://staticcontent.fxstreet.com/website/static-html/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://staticcontent.fxstreet.com/website/static-html/favicon-16x16.png">
+    <link rel="manifest" href="https://staticcontent.fxstreet.com/website/static-html/site.webmanifest">
+    <link rel="mask-icon" href="https://staticcontent.fxstreet.com/website/static-html/safari-pinned-tab.svg"
+        color="#e4871b">
+    <meta name="apple-mobile-web-app-title" content="Fxstreet">
+    <meta name="application-name" content="Fxstreet">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://staticcontent.fxstreet.com/website/css/fxs_screen.css" rel="stylesheet">
+    <title>
+        FXStreet - The Foreign Exchange Market
+    </title>
+    <meta name="lang" content="en" />
+    <meta name="description"
+        content="FXStreet is a leading source for reliable news and real time Forex analysis. FXStreet offers real-time exchange rates, charts and an economic calendar." />
+    <meta name="keywords" content="forex, trading, fx, trade, news, reports, analysis" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+    <script src="./js/renderMustache.js"></script>
+</head>
+
+<body onload="renderMustache('data.json','intro.mst','#content');">
+    <a id="" class="fxs_skip" href="#fxs_content">Skip to main content</a>
+    <div class="fxs_bgHeader">
+        <div class="fxs_staticHeader">
+            <header class="fxs_header">
+                <div id="fxs_socialLogo_header" class="fxs_socialHeader">
+                    <div class="fxs_logo">
+                        <a href="/" title="FXStreet">FXStreet - The forex market</a>
+                    </div>
+                </div>
+                <div id="fxs_nav_position" class="fxs_clearfix fxs_navControl">
+                    <div class="fxs_navBg">
+                        <div id="fxs_it_horizontalMenu">
+                            <nav class="fxs_nav_menu fxs_main_nav" role="navigation">
+                                <ul>
+                                    <li fxs-section-entry>
+                                        <a fxs-desktop-menu-entry id="RATES_CHARTS_SECTION"
+                                            class="fxs_nav_main_menu_desktop " href="/rates-charts">RATES &amp;
+                                            CHARTS</a>
+                                        <div class="fxs_nav_itemsContainer fxs_hideElements">
+                                            <div class="fxs_navBg">
+                                                <div class="fxs_subNav_rates">
+                                                    <div class="fxs_navItemsBox">
+                                                        <ul class="fxs_subNav_col_2 fxs_list_unstyled">
+                                                            <li>
+                                                                <i class="fas fa-angle-right" aria-hidden="true"></i>
+                                                                <a fxs-desktop-menu-item-entry
+                                                                    href="/rates-charts/chart">Live Chart <span
+                                                                        class="fxs_label fxs_label_highlight"></span></a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="fxs_navItemsBox">
+                                                        <ul class="fxs_subNav_col_3 fxs_list_unstyled">
+                                                            <li>
+                                                                <i class="fas fa-angle-right" aria-hidden="true"></i>
+                                                                <a fxs-desktop-menu-item-entry
+                                                                    href="/rates-charts/eurusd">EUR/USD <span
+                                                                        class="fxs_label fxs_label_highlight"></span></a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="fxs_wrapper fxs_content_wide">
+        <div class="fxs_content">
+            <div class="fxs_contentView">
+                <div class="fxs_detail">
+                    <div id="content"></div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
