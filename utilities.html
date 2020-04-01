@@ -947,6 +947,87 @@
                   description: "text-transform:uppercase"
                 }
               ]
+            },
+            {
+              label: "Headlines",
+              items: [
+                {
+                  classNames: [
+                    "fxs_headline",
+                    "fxs_entriesList fxs_entryHeadline"
+                  ],
+                  description:
+                    "Mobile & desktop<br/>font-size: 1rem;<br/>line-height: 1.25rem;"
+                },
+                {
+                  classNames: [
+                    "fxs_headline_large",
+                    "fxs_entryFeatured_big fxs_entryHeadline",
+                    "fxs_pricing_table_value"
+                  ],
+                  description:
+                    "<p>Mobile (680)<br/>font-size: 1.93rem;<br/>line-height: 2rem;</p>Desktop<br/>font-size: 2.64rem;<br/>line-height: 2.75rem;</p>"
+                },
+                {
+                  classNames: ["fxs_headline_from_medium_to_large"],
+                  description:
+                    "<p>Mobile (680)<br/>font-size: 1.55rem;<br/>line-height: 1.6rem;</p>Desktop<br/>font-size: 2rem;<br/>line-height: 2.2rem;</p>"
+                },
+                {
+                  classNames: [
+                    "fxs_headline_medium",
+                    "fxs_headline_title_ctrl",
+                    "fxs_entryFeatured_med fxs_entryHeadline",
+                    "fxs_entryFeatured_imgSide fxs_entryHeadline",
+                    "fxs_live_event_module fxs_entryHeadline"
+                  ],
+                  description:
+                    "<p>Mobile (680)<br/>font-size: 1.3rem;<br/>line-height: 1.4rem;</p>Desktop<br/>font-size: 1.68rem;<br/>line-height: 2rem;</p>"
+                },
+                {
+                  classNames: ["fxs_headline_from_small_to_medium"],
+                  description:
+                    "<p>Mobile (680)<br/>font-size: 1.1rem;<br/>line-height: 1.3rem;</p>Desktop<br/>font-size: 1.4rem;<br/>line-height: 1.6rem;</p>"
+                },
+                {
+                  classNames: [
+                    "fxs_headline_small",
+                    "fxs_relatedContentSlot_x3_cols fxs_entryHeadline",
+                    "fxs_entryFeatured_reduced fxs_entryHeadline",
+                    "fxs_live_event_cellfxs_upcomming_item fxs_entryHeadline",
+                    "fxs_col_33 fxs_entryFeatured fxs_entryHeadline",
+                    "fxs_col_67 fxs_col_50 fxs_entryFeatured fxs_entryHeadline",
+                    "fxs_col_33 fxs_entryFeatured_imgSide fxs_entryHeadline",
+                    "fxs_col_67 fxs_col_50 fxs_entryFeatured_imgSide fxs_entryHeadline"
+                  ],
+                  description:
+                    "<p>Mobile (680)<br/>font-size: 1rem;<br/>line-height: 1.25rem;</p>Desktop<br/>font-size: 1.2rem;<br/>line-height: 1.3rem;</p>"
+                },
+                {
+                  classNames: [
+                    "fxs_headline_tiny",
+                    "fxs_feedbackLoading_msg fxs_loadingStatus",
+                    "fxs_relatedContentSlot_x4_cols fxs_entryHeadline"
+                  ],
+                  description:
+                    "<p>Mobile (680)<br/>font-size: 0.8rem;<br/>line-height: 1.063rem;<br/>margin-bottom: 0;</p>Desktop<br/>font-size: 1rem;<br/>line-height: 1.25rem;</p>"
+                },
+                {
+                  classNames: [
+                    "fxs_headline_tinyfxs_headline_muted",
+                    "fxs_relatedContentSlot_x4_cols fxs_entryHeadlinefxs_headline_muted"
+                  ],
+                  description: "<p>Mobile (680)<br/>color: #1B1C23;</p>"
+                },
+                {
+                  classNames: [
+                    "fxs_headline_highlight",
+                    "fxs_underlined_headline_highlight_clr"
+                  ],
+                  description:
+                    "<p>Mobile (680)<br/>border-bottom: 2px solid #E4871B;<br/> text-transform: uppercase;<br/> font-style: italic;<br/> font-size: 1rem;<br/> line-height: 1.4rem;<br/> color: #49494f;</p>Desktop<br/>font-size: 1.2rem;<br/> line-height: 1.7rem;</p>"
+                }
+              ]
             }
           ]
         }
@@ -966,8 +1047,8 @@
                 {{#items}}
                 <tr>
                     <td>{{#classNames}} <p>{{.}}</p>{{/classNames}}</td>
-                    <td>{{description}}</td>
-                    <td>{{#classNames}}<p class="{{.}}">{{description}}</p>{{/classNames}}</td>
+                    <td>{{{description}}}</td>
+                    <td>{{#classNames}}<p class="{{.}}">{{.}}</p>{{/classNames}}</td>
                 </tr>
                 {{/items}}
             </table>
