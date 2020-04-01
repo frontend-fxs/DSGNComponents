@@ -69,6 +69,17 @@
       .fxs_content_wide .fxs_content {
         height: auto;
       }
+      .fxs_lateral-menu {
+        position: fixed;
+        top: 100px;
+        right: 100px;
+      }
+      .fxs_bgHeader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
     </style>
   </head>
 
@@ -130,9 +141,11 @@
       var utilities = [
         {
           label: "TEXT",
+          id: "text",
           subsections: [
             {
               label: "Alignments",
+              id: "alignments",
               items: [
                 {
                   classNames: ["fxs_txt_left"],
@@ -154,6 +167,7 @@
             },
             {
               label: "Colors",
+              id: "colors",
               items: [
                 {
                   classNames: ["fxs_txt_corp_clr"],
@@ -918,6 +932,7 @@
             },
             {
               label: "Decorations",
+              id: "decorations",
               items: [
                 {
                   classNames: ["fxs_txt_weight_300"],
@@ -955,6 +970,7 @@
             },
             {
               label: "Headlines",
+              id: "headlines",
               items: [
                 {
                   classNames: ["fxs_headline"],
@@ -1011,6 +1027,7 @@
             },
             {
               label: "Text Sizes",
+              id: "textsizes",
               items: [
                 {
                   classNames: ["fxs_txt_normal", "fxs_txt_defaultsize"],
@@ -1099,9 +1116,14 @@
       ];
     </script>
     <script id="template" type="x-tmpl-mustache">
-      {{#.}}
-        <h1 class="fxs_txt_center">{{label}}</h1>
+        <div class="fxs_marginBase_big fxs_clearfix"></div>
+        <h1 class="fxs_txt_center">UTILITIES</h1>
+        {{#.}}
+        <div class="fxs_marginBase_big fxs_clearfix"></div>
+        <h2 class="fxs_txt_center" id="{{id}}">{{label}}</h2>
         {{#subsections}}
+            <div  id="{{id}}" class="fxs_marginBase_big fxs_clearfix"></div>
+            <div class="fxs_marginBase_big fxs_clearfix"></div>
             <table class="fxs_table">
                 <caption><h2>{{label}}</h2></caption>
                 <tr>
@@ -1118,6 +1140,18 @@
                 {{/items}}
             </table>
         {{/subsections}}
+      {{/.}}
+      {{#.}}
+      <div class="fxs_lateral-menu">
+        <a href="#{{id}}" class="fxs_txt_center">{{label}}</a>
+        <ul>
+            {{#subsections}}
+            <li>
+                <a href="#{{id}}">{{label}}</a>
+            </li>
+            {{/subsections}}
+        </ul>
+        </div>
       {{/.}}
     </script>
     <script>
