@@ -1,0 +1,946 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <meta charset="utf-8" />
+    <meta property="fb:app_id" content="165130350199320" />
+    <meta
+      name="msapplication-TileImage"
+      content="https://staticcontent.fxstreet.com/website/static-html/mstile-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://staticcontent.fxstreet.com/website/static-html/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://staticcontent.fxstreet.com/website/static-html/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://staticcontent.fxstreet.com/website/static-html/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://staticcontent.fxstreet.com/website/static-html/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="https://staticcontent.fxstreet.com/website/static-html/site.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="https://staticcontent.fxstreet.com/website/static-html/safari-pinned-tab.svg"
+      color="#e4871b"
+    />
+    <meta name="apple-mobile-web-app-title" content="Fxstreet" />
+    <meta name="application-name" content="Fxstreet" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://staticcontent.fxstreet.com/website/css/fxs_screen.css"
+      rel="stylesheet"
+    />
+    <title>
+      FXStreet - The Foreign Exchange Market
+    </title>
+    <meta name="lang" content="en" />
+    <meta
+      name="description"
+      content="FXStreet is a leading source for reliable news and real time Forex analysis. FXStreet offers real-time exchange rates, charts and an economic calendar."
+    />
+    <meta
+      name="keywords"
+      content="forex, trading, fx, trade, news, reports, analysis"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+  </head>
+
+  <body>
+    <div class="fxs_bgHeader">
+      <div class="fxs_staticHeader">
+        <header class="fxs_header">
+          <div id="fxs_socialLogo_header" class="fxs_socialHeader">
+            <div class="fxs_logo">
+              <a href="/" title="FXStreet">FXStreet - The forex market</a>
+            </div>
+          </div>
+          <div id="fxs_nav_position" class="fxs_clearfix fxs_navControl">
+            <div class="fxs_navBg">
+              <div id="fxs_it_horizontalMenu">
+                <nav class="fxs_nav_menu fxs_main_nav" role="navigation">
+                  <ul>
+                    <li>
+                      <a class="fxs_nav_main_menu_desktop " href="./index.html"
+                        >Intro</a
+                      >
+                    </li>
+
+                    <li class="active">
+                      <a
+                        class="fxs_nav_main_menu_desktop "
+                        href="./utilities.html"
+                        >Utilities
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        class="fxs_nav_main_menu_desktop "
+                        href="./components.html"
+                        >Components
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <div class="fxs_wrapper fxs_content_wide">
+      <div class="fxs_content">
+        <div class="fxs_contentView">
+          <div class="fxs_detail">
+            <div id="content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var utilities = [
+        {
+          label: "text",
+          subsections: [
+            {
+              label: "Alignments",
+              items: [
+                {
+                  classNames: ["fxs_txt_left"],
+                  description: "Text align left"
+                },
+                {
+                  classNames: ["fxs_align_right", "fxs_txt_right"],
+                  description: "Text align right"
+                },
+                {
+                  classNames: [
+                    "fxs_aCenter",
+                    "fxs_txt_center",
+                    "fxs_align_center"
+                  ],
+                  description: "Text align center"
+                }
+              ]
+            },
+            {
+              label: "Colors",
+              items: [
+                {
+                  classNames: ["fxs_txt_corp_clr"],
+                  description: "#242D38"
+                },
+                {
+                  classNames: ["fxs_txt_corp_light_1_clr"],
+                  description: "#384657"
+                },
+                {
+                  classNames: ["fxs_txt_corp_light_2_clr"],
+                  description: "#4c5f76"
+                },
+                {
+                  classNames: ["fxs_txt_corp_light_3_clr"],
+                  description: "#607895"
+                },
+                {
+                  classNames: ["fxs_txt_corp_light_4_clr"],
+                  description: "#7d92ab"
+                },
+                {
+                  classNames: ["fxs_txt_corp_light_5_clr"],
+                  description: "#9cacbf"
+                },
+                {
+                  classNames: ["fxs_txt_corp_light_6_clr"],
+                  description: "#bbc6d3"
+                },
+                {
+                  classNames: ["fxs_txt_corp_light_7_clr"],
+                  description: "#dae0e7"
+                },
+                {
+                  classNames: ["fxs_txt_corp_light_8_clr"],
+                  description: "#f9fafb"
+                },
+                {
+                  classNames: ["fxs_txt_corp_light_9_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_corp_dark_1_clr"],
+                  description: "#101419"
+                },
+                {
+                  classNames: ["fxs_txt_corp_dark_2_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_corp_dark_3_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_corp_dark_4_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_corp_dark_5_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_corp_dark_6_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_corp_dark_7_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_corp_dark_8_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_corp_dark_9_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_related", "fxs_txt_brand_highlight_clr"],
+                  description: "#304C70"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_light_1_clr"],
+                  description: "#3f6494"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_light_2_clr"],
+                  description: "#517db5"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_light_3_clr"],
+                  description: "#7598c4"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_light_4_clr"],
+                  description: "#99b2d3"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_light_5_clr"],
+                  description: "#bccde3"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_light_6_clr"],
+                  description: "#e0e8f2"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_light_7_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_light_8_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_light_9_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_dark_1_clr"],
+                  description: "#21344c"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_dark_2_clr"],
+                  description: "#111c29"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_dark_3_clr"],
+                  description: "#020305"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_dark_4_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_dark_5_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_dark_6_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_dark_7_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_dark_8_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_brand_highlight_dark_9_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_info_clr"],
+                  description: "#6289AC"
+                },
+                {
+                  classNames: ["fxs_txt_info_light_1_clr"],
+                  description: "#83a2be"
+                },
+                {
+                  classNames: ["fxs_txt_info_light_2_clr"],
+                  description: "#a5bbcf"
+                },
+                {
+                  classNames: ["fxs_txt_info_light_3_clr"],
+                  description: "#c6d4e1"
+                },
+                {
+                  classNames: ["fxs_txt_info_light_4_clr"],
+                  description: "#e7edf3"
+                },
+                {
+                  classNames: ["fxs_txt_info_light_5_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_info_light_6_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_info_light_7_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_info_light_8_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_info_light_9_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_info_dark_1_clr"],
+                  description: "#4c6f8f"
+                },
+                {
+                  classNames: ["fxs_txt_info_dark_2_clr"],
+                  description: "#3a556e"
+                },
+                {
+                  classNames: ["fxs_txt_info_dark_3_clr"],
+                  description: "#283b4d"
+                },
+                {
+                  classNames: ["fxs_txt_info_dark_4_clr"],
+                  description: "#17222b"
+                },
+                {
+                  classNames: ["fxs_txt_info_dark_5_clr"],
+                  description: "#05080a"
+                },
+                {
+                  classNames: ["fxs_txt_info_dark_6_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_info_dark_7_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_info_dark_8_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_info_dark_9_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_light_clr"],
+                  description: "#04aab2"
+                },
+                {
+                  classNames: ["fxs_txt_light_light_1_clr"],
+                  description: "#05dae4"
+                },
+                {
+                  classNames: ["fxs_txt_light_light_2_clr"],
+                  description: "#22f0fa"
+                },
+                {
+                  classNames: ["fxs_txt_light_light_3_clr"],
+                  description: "#54f3fb"
+                },
+                {
+                  classNames: ["fxs_txt_light_light_4_clr"],
+                  description: "#86f7fc"
+                },
+                {
+                  classNames: ["fxs_txt_light_light_5_clr"],
+                  description: "#b8fafd"
+                },
+                {
+                  classNames: ["fxs_txt_light_light_6_clr"],
+                  description: "#e9feff"
+                },
+                {
+                  classNames: ["fxs_txt_light_light_7_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_light_light_8_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_light_light_9_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_light_dark_1_clr"],
+                  description: "#037a80"
+                },
+                {
+                  classNames: ["fxs_txt_light_dark_2_clr"],
+                  description: "#024b4e"
+                },
+                {
+                  classNames: ["fxs_txt_light_dark_3_clr"],
+                  description: "#011b1c"
+                },
+                {
+                  classNames: ["fxs_txt_light_dark_4_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_light_dark_5_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_light_dark_6_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_light_dark_7_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_light_dark_8_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_light_dark_9_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: [
+                    "fxs_txt_highlight_icon_bg",
+                    "fxs_txt_highlight_icon_clr"
+                  ],
+                  description: "#0CB5C6"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_light_1_clr"],
+                  description: "#14ddf1"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_light_2_clr"],
+                  description: "#44e4f4"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_light_3_clr"],
+                  description: "#74ebf7"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_light_4_clr"],
+                  description: "#a4f2fa"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_light_5_clr"],
+                  description: "#d5f9fc"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_light_6_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_light_7_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_light_8_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_light_9_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_dark_1_clr"],
+                  description: "#098996"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_dark_2_clr"],
+                  description: "#065d66"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_dark_3_clr"],
+                  description: "#033136"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_dark_4_clr"],
+                  description: "#000506"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_dark_5_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_dark_6_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_dark_7_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_dark_8_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_icon_dark_9_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_success", "fxs_txt_success_clr"],
+                  description: "#338473"
+                },
+                {
+                  classNames: ["fxs_txt_success_light_1_clr"],
+                  description: "#41a993"
+                },
+                {
+                  classNames: ["fxs_txt_success_light_2_clr"],
+                  description: "#5dc0ab"
+                },
+                {
+                  classNames: ["fxs_txt_success_light_3_clr"],
+                  description: "#81cfbe"
+                },
+                {
+                  classNames: ["fxs_txt_success_light_4_clr"],
+                  description: "#a6ddd1"
+                },
+                {
+                  classNames: ["fxs_txt_success_light_5_clr"],
+                  description: "#cbebe4"
+                },
+                {
+                  classNames: ["fxs_txt_success_light_6_clr"],
+                  description: "#f0f9f7"
+                },
+                {
+                  classNames: ["fxs_txt_success_light_7_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_success_light_8_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_success_light_9_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_success_dark_1_clr"],
+                  description: "#255f53"
+                },
+                {
+                  classNames: ["fxs_txt_success_dark_2_clr"],
+                  description: "#173a33"
+                },
+                {
+                  classNames: ["fxs_txt_success_dark_3_clr"],
+                  description: "#081613"
+                },
+                {
+                  classNames: ["fxs_txt_success_dark_4_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_success_dark_5_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_success_dark_6_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_success_dark_7_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_success_dark_8_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_success_dark_9_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_clr"],
+                  description: "#ce0518"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_light_1_clr"],
+                  description: "#f90d23"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_light_2_clr"],
+                  description: "#fa3f50"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_light_3_clr"],
+                  description: "#fc707e"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_light_4_clr"],
+                  description: "#fda2ab"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_light_5_clr"],
+                  description: "#fed4d8"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_light_6_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_light_7_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_light_8_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_light_9_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_dark_1_clr"],
+                  description: "#9c0412"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_dark_2_clr"],
+                  description: "#6a030c"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_dark_3_clr"],
+                  description: "#390107"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_dark_4_clr"],
+                  description: "#070001"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_dark_5_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_dark_6_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_dark_7_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_dark_8_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_alternate_dark_9_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: [
+                    "fxs_txt_danger",
+                    "fxs_txt_danger_clr",
+                    "fxs_txt_error_clr"
+                  ],
+                  description: "#D25746"
+                },
+                {
+                  classNames: ["fxs_txt_error_light_1_clr"],
+                  description: "#dc7c6f"
+                },
+                {
+                  classNames: ["fxs_txt_error_light_2_clr"],
+                  description: "#e6a298"
+                },
+                {
+                  classNames: ["fxs_txt_error_light_3_clr"],
+                  description: "#f0c7c1"
+                },
+                {
+                  classNames: ["fxs_txt_error_light_4_clr"],
+                  description: "#faecea"
+                },
+                {
+                  classNames: ["fxs_txt_error_light_5_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_error_light_6_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_error_light_7_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_error_light_8_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_error_light_9_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_error_dark_1_clr"],
+                  description: "#b83e2d"
+                },
+                {
+                  classNames: ["fxs_txt_error_dark_2_clr"],
+                  description: "#8f3023"
+                },
+                {
+                  classNames: ["fxs_txt_error_dark_3_clr"],
+                  description: "#662219"
+                },
+                {
+                  classNames: ["fxs_txt_error_dark_4_clr"],
+                  description: "#3d140f"
+                },
+                {
+                  classNames: ["fxs_txt_error_dark_5_clr"],
+                  description: "#140705"
+                },
+                {
+                  classNames: ["fxs_txt_error_dark_6_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_error_dark_7_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_error_dark_8_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_error_dark_9_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: [
+                    "fxs_invert_link",
+                    "fxs_txt_highlight",
+                    "fxs_txt_highlight_clr"
+                  ],
+                  description: "#E4871B"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_light_1_clr"],
+                  description: "#e99f49"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_light_2_clr"],
+                  description: "#efb776"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_light_3_clr"],
+                  description: "#f4cfa4"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_light_4_clr"],
+                  description: "#fae7d1"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_light_5_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_light_6_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_light_7_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_light_8_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_light_9_clr"],
+                  description: "#ffffff"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_dark_1_clr"],
+                  description: "#b66c16"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_dark_2_clr"],
+                  description: "#895110"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_dark_3_clr"],
+                  description: "#5b360b"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_dark_4_clr"],
+                  description: "#2e1b05"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_dark_5_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_dark_6_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_dark_7_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_dark_8_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_dark_9_clr"],
+                  description: "#000000"
+                },
+                {
+                  classNames: ["fxs_txt_warning_clr"],
+                  description: "#F5C861"
+                },
+                {
+                  classNames: ["fxs_txt_highlight_clr_1"],
+                  description: "#f6dbc4"
+                },
+                {
+                  classNames: ["fxs_txt_warning"],
+                  description: "#f0af19"
+                },
+                {
+                  classNames: ["fxs_txt_darkest", "fxs_txt_darkest_clr"],
+                  description: "#000"
+                },
+                {
+                  classNames: ["fxs_txt_dark_1", "fxs_txt_dark_1_clr"],
+                  description: "#1B1C23"
+                },
+                {
+                  classNames: ["fxs_txt_dark_2", "fxs_txt_dark_2_clr"],
+                  description: "#25252B"
+                },
+                {
+                  classNames: ["fxs_txt_dark_3", "fxs_txt_dark_3_clr"],
+                  description: "#2F2F33"
+                },
+                {
+                  classNames: ["fxs_txt_dark_4", "fxs_txt_dark_4_clr"],
+                  description: "#49494F"
+                },
+                {
+                  classNames: [
+                    "fxs_txt_neutral",
+                    "fxs_txt_light_1",
+                    "fxs_txt_light_1_clr"
+                  ],
+                  description: "#8C8D91"
+                },
+                {
+                  classNames: ["fxs_txt_light_2", "fxs_txt_light_2_clr"],
+                  description: "#A3A3A8"
+                },
+                {
+                  classNames: ["fxs_txt_light_3", "fxs_txt_light_3_clr"],
+                  description: "#DDDEDF"
+                },
+                {
+                  classNames: ["fxs_txt_light_4", "fxs_txt_light_4_clr"],
+                  description: "#ECECF1"
+                },
+                {
+                  classNames: ["fxs_txt_light_5", "fxs_txt_light_5_clr"],
+                  description: "#F3F3F8"
+                },
+                {
+                  classNames: [
+                    "fxs_whiteClr",
+                    "fxs_txt_lightest",
+                    "fxs_txt_lightest_clr"
+                  ],
+                  description: "#FFF"
+                }
+              ]
+            }
+          ]
+        }
+      ];
+    </script>
+    <script id="template" type="x-tmpl-mustache">
+      {{#.}}
+        <h2>{{label}}</h2>
+        {{#subsections}}
+            <table class="fxs_table">
+                <caption>{{label}}</caption>
+                <tr>
+                    <th>Class Names</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+                {{#items}}
+                <tr>
+                    <td>{{#classNames}} <p>{{.}}</p>{{/classNames}}</td>
+                    <td>{{description}}</td>
+                    <td>{{#classNames}}<p class="{{.}}">{{description}}</p>{{/classNames}}</td>
+                </tr>
+                {{/items}}
+            </table>
+        {{/subsections}}
+      {{/.}}
+    </script>
+    <script>
+      var template = document.getElementById("template").innerHTML;
+      var rendered = Mustache.render(template, utilities);
+      document.getElementById("content").innerHTML = rendered;
+    </script>
+  </body>
+</html>
