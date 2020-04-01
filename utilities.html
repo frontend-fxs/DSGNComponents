@@ -65,6 +65,11 @@
       content="forex, trading, fx, trade, news, reports, analysis"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+    <style>
+      .fxs_content_wide .fxs_content {
+        height: auto;
+      }
+    </style>
   </head>
 
   <body>
@@ -76,10 +81,10 @@
               <a href="/" title="FXStreet">FXStreet - The forex market</a>
             </div>
           </div>
-          
+          <div id="fxs_nav_position" class="fxs_clearfix fxs_navControl">
             <div class="fxs_navBg">
               <div id="fxs_it_horizontalMenu">
-                
+                <nav class="fxs_nav_menu fxs_main_nav" role="navigation">
                   <ul>
                     <li>
                       <a class="fxs_nav_main_menu_desktop " href="./index.html"
@@ -111,7 +116,7 @@
       </div>
     </div>
 
-    
+    <div class="fxs_wrapper fxs_content_wide">
       <div class="fxs_content">
         <div class="fxs_contentView">
           <div class="fxs_detail">
@@ -952,17 +957,12 @@
               label: "Headlines",
               items: [
                 {
-                  classNames: [
-                    "fxs_headline",
-                ],
+                  classNames: ["fxs_headline"],
                   description:
                     "<p><strong>Mobile & desktop</strong><br/>font-size: 1rem;<br/>line-height: 1.25rem;</p>"
                 },
                 {
-                  classNames: [
-                    "fxs_headline_large",
-                    "fxs_pricing_table_value"
-                  ],
+                  classNames: ["fxs_headline_large", "fxs_pricing_table_value"],
                   description:
                     "<p><strong>Mobile (<680)</strong><br/>font-size: 1.93rem;<br/>line-height: 2rem;</p><strong>Desktop (>680)</strong><br/>font-size: 2.64rem;<br/>line-height: 2.75rem;</p>"
                 },
@@ -974,8 +974,8 @@
                 {
                   classNames: [
                     "fxs_headline_medium",
-                    "fxs_headline_title_ctrl",
-                ],
+                    "fxs_headline_title_ctrl"
+                  ],
                   description:
                     "<p><strong>Mobile (<680)</strong><br/>font-size: 1.3rem;<br/>line-height: 1.4rem;</p><strong>Desktop (>680)</strong><br/>font-size: 1.68rem;<br/>line-height: 2rem;</p>"
                 },
@@ -985,24 +985,19 @@
                     "<p><strong>Mobile (<680)</strong><br/>font-size: 1.1rem;<br/>line-height: 1.3rem;</p><strong>Desktop (>680)</strong><br/>font-size: 1.4rem;<br/>line-height: 1.6rem;</p>"
                 },
                 {
-                  classNames: [
-                    "fxs_headline_small",
-                ],
+                  classNames: ["fxs_headline_small"],
                   description:
                     "<p><strong>Mobile (<680)</strong><br/>font-size: 1rem;<br/>line-height: 1.25rem;</p><strong>Desktop (>680)</strong><br/>font-size: 1.2rem;<br/>line-height: 1.3rem;</p>"
                 },
                 {
-                  classNames: [
-                    "fxs_headline_tiny",
-                ],
+                  classNames: ["fxs_headline_tiny"],
                   description:
                     "<p><strong>Mobile (<680)</strong><br/>font-size: 0.8rem;<br/>line-height: 1.063rem;<br/>margin-bottom: 0;</p><strong>Desktop (>680)</strong><br/>font-size: 1rem;<br/>line-height: 1.25rem;</p>"
                 },
                 {
-                  classNames: [
-                    "fxs_headline_tinyfxs_headline_muted",
-                ],
-                  description: "<p><strong>Mobile (<680)</strong><br/>color: #1B1C23;</p>"
+                  classNames: ["fxs_headline_tinyfxs_headline_muted"],
+                  description:
+                    "<p><strong>Mobile (<680)</strong><br/>color: #1B1C23;</p>"
                 },
                 {
                   classNames: [
@@ -1011,6 +1006,91 @@
                   ],
                   description:
                     "<p><strong>Mobile (<680)</strong><br/>border-bottom: 2px solid #E4871B;<br/> text-transform: uppercase;<br/> font-style: italic;<br/> font-size: 1rem;<br/> line-height: 1.4rem;<br/> color: #49494f;</p><strong>Desktop (>680)</strong><br/>font-size: 1.2rem;<br/> line-height: 1.7rem;</p>"
+                }
+              ]
+            },
+            {
+              label: "Text Sizes",
+              items: [
+                {
+                  classNames: ["fxs_txt_normal", "fxs_txt_defaultsize"],
+                  description:
+                    "<p><strong>Mobile (<680)</strong><br/>font-size: 0.92rem;</p><strong>Desktop (>680)</strong><br/>font-size: 1rem;</p>"
+                },
+                {
+                  classNames: ["fxs_txt_size_hero"],
+                  description:
+                    "<p><strong>Mobile & desktop</strong><br/>font-size: 3.75rem;</p>"
+                },
+                {
+                  classNames: ["fxs_txt_size_xhuge"],
+                  description:
+                    "<p><strong>Mobile & desktop</strong><br/>font-size: 2.64rem;</p>"
+                },
+                {
+                  classNames: ["fxs_txt_size_mhuge"],
+                  description:
+                    "<p><strong>Mobile & desktop</strong><br/>font-size: 2.4rem;</p>"
+                },
+                {
+                  classNames: ["fxs_txt_size_huge"],
+                  description:
+                    "<p><strong>Mobile & desktop</strong><br/>font-size: 1.93rem;</p>"
+                },
+                {
+                  classNames: ["fxs_txt_size_xxlarge"],
+                  description:
+                    "<p><strong>Mobile & desktop</strong><br/>font-size: 1.46rem;</p>"
+                },
+                {
+                  classNames: ["fxs_txt_clean_large", "fxs_txt_size_xlarge"],
+                  description:
+                    "<p><strong>Mobile & desktop</strong><br/>font-size: 1.34rem;</p>"
+                },
+                {
+                  classNames: ["fxs_txt_clean_large"],
+                  description:
+                    "<p><strong>Mobile (<680)</strong><br/>font-size: 1rem;</p><strong>Desktop (>680)</strong><br/>font-size: 1.2rem;<br/>line-height: 1.35em;</p>"
+                },
+                {
+                  classNames: ["fxs_txt_size_small"],
+                  description:
+                    "<p><strong>Mobile (<680)</strong><br/>font-size: 0.8rem;</p><strong>Desktop (>680)</strong><br/>font-size: 0.92rem;</p>"
+                },
+                {
+                  classNames: ["fxs_txt_xsmall", "fxs_txt_size_xsmall"],
+                  description:
+                    "<p><strong>Mobile (<680)</strong><br/>font-size: 11px;</p><strong>Desktop (>680)</strong><br/>font-size: 0.8rem;</p>"
+                },
+                {
+                  classNames: ["fxs_txt_size_nano"],
+                  description:
+                    "<p><strong>Mobile & desktop</strong><br/>font-size: 11px;</p>"
+                },
+                {
+                  classNames: ["fxs_entryPlain_txt_large"],
+                  description:
+                    "<p><strong>Mobile (<680)</strong><br/>font-size: 1rem;<br/>line-height: 1.35em;<br/>font-weight: 300;</p><strong>Desktop (>680)</strong><br/>font-size: 1.2rem;</p>"
+                },
+                {
+                  classNames: ["fxs_entryPlain_txt", "fxs_entryExcerpt"],
+                  description:
+                    "<p><strong>Mobile (<680)</strong><br/>font-size: 0.92rem;<br/>line-height: 1.25rem;<br/>font-weight: 300;</p><strong>Desktop (>680)</strong><br/>font-size: 1rem;<br/>line-height: 1.35em;<br/>font-weight: 300;</p>"
+                },
+                {
+                  classNames: ["fxs_entryPlain_txt_medium"],
+                  description:
+                    "<p><strong>Mobile (<680)</strong><br/>font-size: 0.8rem;<br/>line-height: 1.063rem;<br/>font-weight: 300;</p><strong>Desktop (>680)</strong><br/>font-size: 0.92rem;<br/>line-height: 1.35em;<br/>font-weight: 300;</p>"
+                },
+                {
+                  classNames: ["fxs_entryPlain_txt_small"],
+                  description:
+                    "<p><strong>Mobile & desktop</strong><br/>font-size: 0.8rem;<br/>line-height: 1.063rem;<br/>font-weight: 300;</p>"
+                },
+                {
+                  classNames: ["fxs_default_line-height"],
+                  description:
+                    "<p><strong>Mobile & desktop</strong><br/>line-height: 1rem;</p>"
                 }
               ]
             }
