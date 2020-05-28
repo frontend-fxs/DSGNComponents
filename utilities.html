@@ -612,7 +612,6 @@
             },
           ],
         },
-
         {
           label: "BORDERS",
           id: "borders",
@@ -636,7 +635,6 @@
             },
           ],
         },
-
         {
           label: "DISPLAYS",
           id: "displays",
@@ -660,7 +658,6 @@
             },
           ],
         },
-
         {
           label: "FLOATS",
           id: "floats",
@@ -680,7 +677,6 @@
             },
           ],
         },
-
         {
           label: "MARGINS",
           id: "margins",
@@ -785,7 +781,6 @@
             },
           ],
         },
-
         {
           label: "PADDINGS",
           id: "paddings",
@@ -897,7 +892,6 @@
             },
           ],
         },
-
         {
           label: "POSITIONING",
           id: "positioning",
@@ -959,12 +953,11 @@
             },
           ],
         },
-
         {
           label: "RESPONSIVE VISIBILITY",
           id: "responsivevisibility",
           subsections: [
-          {
+            {
               label: "Hidden Block",
               id: "hiddenBlock",
               items: [
@@ -1005,47 +998,357 @@
                   description: "display: none<br/>>=1580<br/>display: block",
                 },
               ],
-            },          {
+            },
+            {
               label: "Hidden Table Cell",
               id: "hiddenTableCell",
               items: [
                 {
                   classNames: ["fxs_hidden_375_table-cell"],
-                  description: "display: none<br/>>=375<br/>display: table-cell",
+                  description:
+                    "display: none<br/>>=375<br/>display: table-cell",
                 },
                 {
                   classNames: ["fxs_hidden_420_table-cell"],
-                  description: "display: none<br/>>=420<br/>display: table-cell",
+                  description:
+                    "display: none<br/>>=420<br/>display: table-cell",
                 },
                 {
                   classNames: ["fxs_hidden_680_table-cell"],
-                  description: "display: none<br/>>=680<br/>display: table-cell",
+                  description:
+                    "display: none<br/>>=680<br/>display: table-cell",
                 },
                 {
-                  classNames: ["fxs_hidden_768_table-cell"],
-                  description: "display: none<br/>>=768<br/>display: table-cell",
+                  classNames: [
+                    "fxs_hidden_768_table-cell",
+                    "fxs_hidden_st_table",
+                  ],
+                  description:
+                    "display: none<br/>>=768<br/>display: table-cell",
                 },
                 {
                   classNames: ["fxs_hidden_920_table-cell"],
-                  description: "display: none<br/>>=920<br/>display: table-cell",
+                  description:
+                    "display: none<br/>>=920<br/>display: table-cell",
                 },
                 {
                   classNames: ["fxs_hidden_1024_table-cell"],
-                  description: "display: none<br/>>=1024<br/>display: table-cell",
+                  description:
+                    "display: none<br/>>=1024<br/>display: table-cell",
                 },
                 {
                   classNames: ["fxs_hidden_1150_table-cell"],
-                  description: "display: none<br/>>=1150<br/>display: table-cell",
+                  description:
+                    "display: none<br/>>=1150<br/>display: table-cell",
                 },
                 {
                   classNames: ["fxs_hidden_1280_table-cell"],
-                  description: "display: none<br/>>=1280<br/>display: table-cell",
+                  description:
+                    "display: none<br/>>=1280<br/>display: table-cell",
                 },
                 {
                   classNames: ["fxs_hidden_1580_table-cell"],
-                  description: "display: none<br/>>=1580<br/>display: table-cell",
+                  description:
+                    "display: none<br/>>=1580<br/>display: table-cell",
                 },
               ],
+            },
+            {
+              label: "Hidden Inline Block",
+              id: "hiddenInlineBlock",
+              items: [
+                {
+                  classNames: ["fxs_hidden_320_iBlock"],
+                  description:
+                    "display: none<br/>>=320<br/>display: inline-block",
+                },
+                {
+                  classNames: ["fxs_hidden_375_iBlock"],
+                  description:
+                    "display: none<br/>>=375<br/>display: inline-block",
+                },
+                {
+                  classNames: ["fxs_hidden_420_iBlock"],
+                  description:
+                    "display: none<br/>>=420<br/>display: inline-block",
+                },
+                {
+                  classNames: ["fxs_hidden_680_iBlock", "fxs_hidden_xs_iBlock"],
+                  description:
+                    "display: none<br/>>=680<br/>display: inline-block",
+                },
+                {
+                  classNames: ["fxs_hidden_768_iBlock", "fxs_hidden_st_iBlock"],
+                  description:
+                    "display: none<br/>>=768<br/>display: inline-block",
+                },
+                {
+                  classNames: ["fxs_hidden_920_iBlock", "fxs_hidden_mm_iBlock"],
+                  description:
+                    "display: none<br/>>=920<br/>display: inline-block",
+                },
+                {
+                  classNames: ["fxs_hidden_1024_iBlock", "fxs_hidden_s_iBlock"],
+                  description:
+                    "display: none<br/>>=1024<br/>display: inline-block",
+                },
+                {
+                  classNames: ["fxs_hidden_1150_iBlock", "fxs_hidden_m_iBlock"],
+                  description:
+                    "display: none<br/>>=1150<br/>display: inline-block",
+                },
+                {
+                  classNames: ["fxs_hidden_1280_iBlock", "fxs_hidden_l_iBlock"],
+                  description:
+                    "display: none<br/>>=1280<br/>display: inline-block",
+                },
+                {
+                  classNames: [
+                    "fxs_hidden_1580_iBlock",
+                    "fxs_hidden_xl_iBlock",
+                  ],
+                  description:
+                    "display: none<br/>>=1580<br/>display: inline-block",
+                },
+              ],
+            },
+            {
+              label: "Hidden Flex",
+              id: "hiddenFlex",
+              items: [
+                {
+                  classNames: ["fxs_hidden_320_flex"],
+                  description: "display: none<br/>>=320<br/>display: flex",
+                },
+                {
+                  classNames: ["fxs_hidden_375_flex"],
+                  description: "display: none<br/>>=375<br/>display: flex",
+                },
+                {
+                  classNames: ["fxs_hidden_420_flex"],
+                  description: "display: none<br/>>=420<br/>display: flex",
+                },
+                {
+                  classNames: ["fxs_hidden_680_flex"],
+                  description: "display: none<br/>>=680<br/>display: flex",
+                },
+                {
+                  classNames: ["fxs_hidden_768_flex"],
+                  description: "display: none<br/>>=768<br/>display: flex",
+                },
+                {
+                  classNames: ["fxs_hidden_920_flex"],
+                  description: "display: none<br/>>=920<br/>display: flex",
+                },
+                {
+                  classNames: ["fxs_hidden_1024_flex"],
+                  description: "display: none<br/>>=1024<br/>display: flex",
+                },
+                {
+                  classNames: ["fxs_hidden_1150_flex"],
+                  description: "display: none<br/>>=1150<br/>display: flex",
+                },
+                {
+                  classNames: ["fxs_hidden_1280_flex"],
+                  description: "display: none<br/>>=1280<br/>display: flex",
+                },
+                {
+                  classNames: ["fxs_hidden_1580_flex"],
+                  description: "display: none<br/>>=1580<br/>display: flex",
+                },
+              ],
+            },
+            {
+              label: "Visible Block",
+              id: "visibleBlock",
+              items: [
+                {
+                  classNames: ["fxs_visible_320"],
+                  description: "display: block<br/>>=320<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_375", "fxs_visible_xs"],
+                  description: "display: block<br/>>=375<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_420"],
+                  description: "display: block<br/>>=420<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_680", "fxs_visible_ss"],
+                  description: "display: block<br/>>=680<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_768", "fxs_visible_s"],
+                  description: "display: block<br/>>=768<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_920", "fxs_visible_mm"],
+                  description: "display: block<br/>>=920<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_1024", "fxs_visible_st"],
+                  description: "display: block<br/>>=1024<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_1150", "fxs_visible_m"],
+                  description: "display: block<br/>>=1150<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_1280", "fxs_visible_l"],
+                  description: "display: block<br/>>=1280<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_1580", "fxs_hidden_hd"],
+                  description: "display: block<br/>>=1580<br/>display: none",
+                },
+              ],
+            },
+            {
+              label: "Visible Inline Block",
+              id: "visibleInlineBlock",
+              items: [
+                {
+                  classNames: ["fxs_visible_320_iBlock"],
+                  description:
+                    "display: inline-block<br/>>=320<br/>display: none",
+                },
+                {
+                  classNames: [
+                    "fxs_visible_375_iBlock",
+                    "fxs_visible_xs_iBlock",
+                  ],
+                  description:
+                    "display: inline-block<br/>>=375<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_420_iBlock"],
+                  description:
+                    "display: inline-block<br/>>=420<br/>display: none",
+                },
+                {
+                  classNames: [
+                    "fxs_visible_680_iBlock",
+                    "fxs_visible_ss_iBlock",
+                  ],
+                  description:
+                    "display: inline-block<br/>>=680<br/>display: none",
+                },
+                {
+                  classNames: [
+                    "fxs_visible_768_iBlock",
+                    "fxs_visible_s_iBlock",
+                  ],
+                  description:
+                    "display: inline-block<br/>>=768<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_920_iBlock"],
+                  description:
+                    "display: inline-block<br/>>=920<br/>display: none",
+                },
+                {
+                  classNames: [
+                    "fxs_visible_1024_iBlock",
+                    "fxs_visible_st_iBlock",
+                  ],
+                  description:
+                    "display: inline-block<br/>>=1024<br/>display: none",
+                },
+                {
+                  classNames: [
+                    "fxs_visible_1150_iBlock",
+                    "fxs_visible_m_iBlock",
+                  ],
+                  description:
+                    "display: inline-block<br/>>=1150<br/>display: none",
+                },
+                {
+                  classNames: [
+                    "fxs_visible_1280_iBlock",
+                    "fxs_visible_l_iBlock",
+                  ],
+                  description:
+                    "display: inline-block<br/>>=1280<br/>display: none",
+                },
+                {
+                  classNames: [
+                    "fxs_visible_1580_iBlock",
+                    "fxs_hidden_hd_iBlock",
+                  ],
+                  description:
+                    "display: inline-block<br/>>=1580<br/>display: none",
+                },
+              ],
+            },
+            {
+              label: "Visible Flex",
+              id: "visibleFlex",
+              items: [
+                {
+                  classNames: ["fxs_visible_320_flex"],
+                  description: "display: flex<br/>>=320<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_375_flex"],
+                  description: "display: flex<br/>>=375<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_420_flex"],
+                  description: "display: flex<br/>>=420<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_680_flex"],
+                  description: "display: flex<br/>>=680<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_768_flex"],
+                  description: "display: flex<br/>>=768<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_920_flex"],
+                  description: "display: flex<br/>>=920<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_1024_flex"],
+                  description: "display: flex<br/>>=1024<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_1150_flex"],
+                  description: "display: flex<br/>>=1150<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_1280_flex"],
+                  description: "display: flex<br/>>=1280<br/>display: none",
+                },
+                {
+                  classNames: ["fxs_visible_1580_flex"],
+                  description: "display: flex<br/>>=1580<br/>display: none",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          label: "Transformations",
+          id: "transformations",
+          haveSections: true,
+          sections: [
+            {
+              classNames: ["fxs_rotate_90"],
+              description: "transform: rotate(90deg)",
+            },
+            {
+              classNames: ["fxs_rotate_180"],
+              description: "transform: rotate(180deg)",
+            },
+            {
+              classNames: ["fxs_rotate_270"],
+              description: "transform: rotate(270deg)",
+            },
+            {
+              classNames: ["fxs_blur"],
+              description: "filter: blur(4px)",
             },
           ],
         },
@@ -1724,7 +2027,21 @@
             },
           ],
         },
-      ];
+      {
+          label: "Widths",
+          id: "widths",
+          haveSections: true,
+          sections: [
+            {
+              classNames: ["fxs_responsive_centered_80"],
+              description: "width: 100%;<br/>>=680<br/>width: 80%",
+            },
+            {
+              classNames: ["fxs_wide_element"],
+              description: "width: 100%;",
+            }
+          ],
+        },];
     </script>
     <script id="template" type="x-tmpl-mustache">
           <div class="fxs_marginBase_big fxs_clearfix"></div>
