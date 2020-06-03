@@ -1,0 +1,20 @@
+.fxs_content_wide .fxs_content {
+    height: auto;
+  }
+  .fxs_lateral-menu {
+    position: fixed;
+    top: 51px;
+    right: 0;
+    max-height: 80vh;
+    overflow: auto;
+    background-color: white;
+    padding:1rem;
+    max-height: calc(100vh - 51px);
+    overflow:auto;
+  }
+  .fxs_bgHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
