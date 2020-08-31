@@ -131,30 +131,35 @@
    <script>
       var components = [
         {
-          label: "Title",
-          id: "title",
+          label: "Divider",
+          id: "divider",
           haveSections: true,
           sections: [
             {
               
-              classNames: ["fxs_sectionTitle_header"],
-              description: "<p><strong>< 680px Mobile</strong></p><p>  display: inline-block;<br/>color: #49494F;<br/>font-size: 0.92rem;<br/>letter-spacing: normal;</p><p><strong>>680 Desktop</strong></p><p>  display: inline-block;<br/>color: #49494F;<br/>font-size: 1rem;<br/>letter-spacing: normal;</p>",
-              example:"<h1 class='fxs_sectionTitle_header'>fxs_sectionTitle_header</h1>"
+              classNames: ["fxs_divider_wide"],
+              description: "<p><strong>< 680px Mobile</strong></p><p>background-color: #ececf1;<br/>height: 7px;<br/>margin-top: 1rem;<br/>margin-bottom: 1rem;</p><p><strong>>680 Desktop</strong></p><p>background-color: #ececf1;<br/>height: 7px;<br/>margin-top: 1rem;<br/>margin-bottom: 2rem;</p>",
+              example:"<hr class='fxs_divider_wide'></hr>"
             },
             {
-              classNames: ["fxs_subsectionTitle"],
-              description: "<p><strong>< 680px Mobile</strong></p><p>display: inline-block;<br/>color: #49494F;<br/>font-size: 0.92rem;<br/>letter-spacing: normal;</br>background-color: #DDDEDF;</br>margin: 0 0 0.5rem -7.5px;</br>padding: 1px 7.5px;</p><p><strong>>680 Desktop</strong></p><p>display: inline-block;<br/>color: #49494F;<br/>font-size: 1rem;<br/>letter-spacing: normal;</br>background-color: #DDDEDF;</br>margin: 0 0 0.5rem -7.5px;</br>padding: 1px 7.5px;</p>",
-              example:"<h3 class='fxs_subsectionTitle'>fxs_subsectionTitle</h3>"
+              classNames: ["fxs_divider_first"],
+              description: "<p><strong>Mobile & Desktop</strong></p><p>background-color: #ECECF1;<br/>margin-bottom: 1rem;<br/>width: 100%;<br/>height: 3px;</p>",
+              example:"<hr class='fxs_divider_first'></hr>"
             },
             {
-              classNames: ["fxs_subtitle"],
-              description: "<p><strong>< 680px Mobile</strong></p><p>display: block;<br/>color: #49494F;<br/>font-size: 0.92rem;<br/>letter-spacing: normal;</br>margin-bottom: 1rem;</br>border-bottom: 2px solid #DDDEDF;</p><p><strong>>680 Desktop</strong></p><p>display: block;<br/>color: #49494F;<br/>font-size: 1rem;<br/>letter-spacing: normal;</br>margin-bottom: 1rem;</br>border-bottom: 2px solid #DDDEDF;</p>",
-              example:"<h3 class='fxs_subtitle'>fxs_subtitle</h3>"
+              classNames: ["fxs_divider_second"],
+              description: "<p><strong>Mobile & Desktop</strong></p><p>background-color: #ECECF1;<br/>margin-bottom: 1rem;<br/>width: 100%;<br/>height: 2px;</p>",
+              example:"<hr class='fxs_divider_second'></hr>"
             },
             {
-              classNames: ["fxs_helperLabel_title"],
-              description: "<p><strong>< 680px Mobile</strong></p><p>display: inline-block;<br/>color: #49494F;<br/>font-size: 0.8rem;<br/>letter-spacing: normal;</br>margin: 0 7.5px 0 0;</p><p><strong>>680 Desktop</strong></p><p>display: inline-block;<br/>color: #49494F;<br/>font-size: 0.92rem;<br/>letter-spacing: normal;</br>margin: 0 7.5px 0 0;</p>",
-              example:"<h3 class='fxs_helperLabel_title'>fxs_helperLabel_title</h3>"
+              classNames: ["fxs_divider_third"],
+              description: "<p><strong>Mobile & Desktop</strong></p><p>background-color: #ECECF1;<br/>margin-bottom: 1rem;<br/>width: 100%;<br/>height: 1px;</p>",
+              example:"<hr class='fxs_divider_third'></hr>"
+            },
+            {
+              classNames: ["fxs_dateIndicator_divider"],
+              description: "<p><strong>Mobile & Desktop</strong></p><p>background-color: #F3F3F8;<br/>color: #49494f;<br/>font-size: 0.8rem<br/>padding: 0.33rem 1rem;</p>",
+              example:"<hr class='fxs_dateIndicator_divider'></hr>"
             }
           ],
         }
