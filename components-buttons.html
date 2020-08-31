@@ -176,8 +176,7 @@
               description:
                 "<p><strong>Active Transversal dropdown Rules</strong></p><p>background-color: white<br/>color: #49494F;</p>",
               example:
-                "<header class='fxs_sectionTitle fxs_sectionTitle_innerDetail fxs_transversal-navigation'><button class='fxs_btn fxs_btn-transversal fxs_btn fxs_btn_dropdown fxs_active'><span>active transversal dropdown button</span><i class='fas fa-caret-up' >
-                  </i></button></header>",
+                "<header class='fxs_sectionTitle fxs_sectionTitle_innerDetail fxs_transversal-navigation'><button class='fxs_btn fxs_btn-transversal fxs_btn fxs_btn_dropdown fxs_active'><span>active transversal dropdown button</span><i class='fas fa-caret-up' > </i></button></header>",
             },
             {
               classNames: [
@@ -228,26 +227,19 @@
               description:
                 "<p><strong>Icon Button Rules</strong></p><p>background-color: transparent<br/> border: 1px solid transparent<br/> min-height: 35px<br/> margin: 2px 0<br/> padding: 0 1rem<br/> cursor: pointer<br/> display: inline-block<br/> text-align: center<br/> vertical-align: middle<br/> line-height: 34px<br/>font-size: 1.34rem<br/> width: 35px<br/> padding: 0<br/></p>",
               example:
-                "<button class='fxs_btn fxs_btn_icon'>
-                  <i class='fas fa-angle-double-right'></i>
-                  <span class='fxs_skip'>Event Details</span>
-                  </button>",
+                "<button class='fxs_btn fxs_btn_icon'> <i class='fas fa-angle-double-right'></i> <span class='fxs_skip'>Event Details</span> </button>",
             },
             {
               classNames: ["fxs_btn fxs_btn_icon fxs_btn_small"],
               description:
                 "<p><strong>Small Icon Button Rules</strong></p><p>font-size: 1rem<br/>width: 27px<br/></p>",
               example:
-                "<button class='fxs_btn fxs_btn_icon fxs_btn_small'>
-                  <i class='fas fa-angle-double-right'></i>
-                  <span class='fxs_skip'>Event Details</span>
-                  </button>",
+                "<button class='fxs_btn fxs_btn_icon fxs_btn_small'> <i class='fas fa-angle-double-right'></i> <span class='fxs_skip'>Event Details</span> </button>",
             },
             {
               classNames: ["fxs_btn fxs_btn_line"],
               description:
-                "<p><strong>Line Button Rules</strong></p><p> color: #1B1C23<br/> border-color: #1B1C23<br/> background-color: transparent<br/> background-color: #FFF<br/> background-color: white<br/>
-                  <p><strong>Rollover State Rules</strong></p><p> background-color: rgba(27, 28, 35, 0.15)</p> ",
+                "<p><strong>Line Button Rules</strong></p><p> color: #1B1C23<br/> border-color: #1B1C23<br/> background-color: transparent<br/> background-color: #FFF<br/> background-color: white<br/> <p><strong>Rollover State Rules</strong></p><p> background-color: rgba(27, 28, 35, 0.15)</p> ",
               example:
                 "<button class='fxs_btn fxs_btn_line'> Button Line </button>",
             },
@@ -587,7 +579,6 @@
               example:
                 "<button class='fxs_btn fxs_btn_content_toggle active'>Active Content Toggle Button</button>",
             },
-
             {
               classNames: ["fxs_btn fxs_btn_phantom"],
               description:
@@ -623,7 +614,6 @@
               example:
                 "<button class='fxs_btn fxs_btn_phantom active'>Active Phantom Button</button>",
             },
-
             {
               classNames: ["fxs_btn fxs_btn_transparent"],
               description:
@@ -664,40 +654,7 @@
       ];
     </script>
     <script id="template" type="x-tmpl-mustache">
-      <div class="fxs_marginBase_big fxs_clearfix"></div>
-      <h1 class="fxs_txt_center">COMPONENTS</h1> {{#.}} <div id="{{id}}" class="fxs_marginBase_big fxs_clearfix"></div>
-      <div class="fxs_marginBase_big fxs_clearfix"></div>
-      <h2 class="fxs_txt_center">{{label}}</h2> {{#haveSections}} <div class="fxs_marginBase_big fxs_clearfix"></div>
-      <table class="fxs_table">
-        <thead>
-        <tr>
-        <th>Class Names</th>
-        <th>Description</th>
-        <th>Example</th>
-      </tr>
-      </thead>
-        <tbody> {{/haveSections}} {{#sections}} <tr>
-        <td><ul>{{#classNames}}<li>{{.}}</li>{{/classNames}}</ul></td>
-        <td>{{{description}}}</td>
-        <td>{{{example}}}</td>
-      </tr> {{/sections}} {{#haveSections}} <div class="fxs_marginBase_big fxs_clearfix"></div>
-      </tbody>
-      </table> {{/haveSections}} {{#subsections}} <div  id="{{id}}" class="fxs_marginBase_big fxs_clearfix"></div>
-      <div class="fxs_marginBase_big fxs_clearfix"></div>
-      <table class="fxs_table">
-        <caption><h2>{{label}}</h2></caption>
-        <tr>
-        <th>Class Names</th>
-        <th>Description</th>
-        <th>Example</th>
-      </tr> {{#items}} <tr>
-        <td><ul>{{#classNames}}<li>{{.}}</li>{{/classNames}}</ul></td>
-        <td>{{{description}}}</td>
-        <td>{{{example}}}</td>
-      </tr> {{/items}} </table> {{/subsections}} {{/.}} <div class="fxs_lateral-menu"> {{#.}} <a href="#{{id}}" class="fxs_txt_center">{{label}}</a>
-        <ul> {{#subsections}} <li>
-        <a href="#{{id}}">{{label}}</a>
-      </li> {{/subsections}} </ul> {{/.}} </div>
+      <div class="fxs_marginBase_big fxs_clearfix"></div> <h1 class="fxs_txt_center">COMPONENTS</h1> {{#.}} <div id="{{id}}" class="fxs_marginBase_big fxs_clearfix"></div> <div class="fxs_marginBase_big fxs_clearfix"></div> <h2 class="fxs_txt_center">{{label}}</h2> {{#haveSections}} <div class="fxs_marginBase_big fxs_clearfix"></div> <table class="fxs_table"> <thead> <tr> <th>Class Names</th> <th>Description</th> <th>Example</th> </tr> </thead> <tbody> {{/haveSections}} {{#sections}} <tr> <td><ul>{{#classNames}}<li>{{.}}</li>{{/classNames}}</ul></td> <td>{{{description}}}</td> <td>{{{example}}}</td> </tr> {{/sections}} {{#haveSections}} <div class="fxs_marginBase_big fxs_clearfix"></div> </tbody> </table> {{/haveSections}} {{#subsections}} <div  id="{{id}}" class="fxs_marginBase_big fxs_clearfix"></div> <div class="fxs_marginBase_big fxs_clearfix"></div> <table class="fxs_table"> <caption><h2>{{label}}</h2></caption> <tr> <th>Class Names</th> <th>Description</th> <th>Example</th> </tr> {{#items}} <tr> <td><ul>{{#classNames}}<li>{{.}}</li>{{/classNames}}</ul></td> <td>{{{description}}}</td> <td>{{{example}}}</td> </tr> {{/items}} </table> {{/subsections}} {{/.}} <div class="fxs_lateral-menu"> {{#.}} <a href="#{{id}}" class="fxs_txt_center">{{label}}</a> <ul> {{#subsections}} <li> <a href="#{{id}}">{{label}}</a> </li> {{/subsections}} </ul> {{/.}} </div>
     </script>
     <script>
       var template = document.getElementById("template").innerHTML;
