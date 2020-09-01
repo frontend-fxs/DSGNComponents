@@ -1,0 +1,651 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <meta charset="utf-8" />
+    <meta property="fb:app_id" content="165130350199320" />
+    <meta
+      name="msapplication-TileImage"
+      content="https://staticcontent.fxstreet.com/website/static-html/mstile-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://staticcontent.fxstreet.com/website/static-html/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://staticcontent.fxstreet.com/website/static-html/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://staticcontent.fxstreet.com/website/static-html/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://staticcontent.fxstreet.com/website/static-html/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="https://staticcontent.fxstreet.com/website/static-html/site.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="https://staticcontent.fxstreet.com/website/static-html/safari-pinned-tab.svg"
+      color="#e4871b"
+    />
+    <meta name="apple-mobile-web-app-title" content="Fxstreet" />
+    <meta name="application-name" content="Fxstreet" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit-pro.fontawesome.com/releases/latest/css/pro.min.css"
+      media="all"
+    />
+    <link
+      href="https://staticcontent.fxstreet.com/website/css/fxs_screen.css"
+      rel="stylesheet"
+    />
+    <title>FXStreet - The Foreign Exchange Market</title>
+    <meta name="lang" content="en" />
+    <meta
+      name="description"
+      content="FXStreet is a leading source for reliable news and real time Forex analysis. FXStreet offers real-time exchange rates, charts and an economic calendar."
+    />
+    <meta
+      name="keywords"
+      content="forex, trading, fx, trade, news, reports, analysis"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="fxs_bgHeader">
+      <div class="fxs_staticHeader">
+        <header class="fxs_header">
+          <div id="fxs_socialLogo_header" class="fxs_socialHeader">
+            <div class="fxs_logo">
+              <a href="/" title="FXStreet">FXStreet - The forex market</a>
+            </div>
+          </div>
+          <div id="fxs_nav_position" class="fxs_clearfix fxs_navControl">
+            <div class="fxs_navBg">
+              <div id="fxs_it_horizontalMenu">
+                <nav class="fxs_nav_menu fxs_main_nav" role="navigation">
+                  <ul>
+                    <li>
+                      <a class="fxs_nav_main_menu_desktop" href="./index.html"
+                        >Intro</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="fxs_nav_main_menu_desktop"
+                        href="./utilities.html"
+                        >Utilities
+                      </a>
+                    </li>
+                    <li class="active">
+                      <a
+                        class="fxs_nav_main_menu_desktop"
+                        href="./components.html"
+                        >Components
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="fxs_nav_main_menu_desktop"
+                        href="./templating.html"
+                        >Templating
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div class="fxs_wrapper fxs_content_wide">
+      <div class="fxs_content">
+        <div class="fxs_contentView">
+          <div class="fxs_detail"><div id="content"></div></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var components = [
+        {
+          label: "BUTTONS",
+          id: "btn",
+          haveSections: true,
+          sections: [
+            {
+              classNames: ["fxs_btn"],
+              description:
+                "<p><strong>Base rules</strong></p><p>background-color: transparent<br/>border: 1px solid transparent<br/>min-height: 35px<br/>margin: 2px 0<br/>padding: 0 1rem<br/>cursor: pointer<br/>display: inline-block<br/>text-align: center<br/>vertical-align: middle<br/>line-height: 34px<br/>text-decoration: none !important<br/>white-space: nowrap<br/>font-size: 0.92rem<br/>font-weight: 700</p>",
+              example:
+                "<button class='fxs_btn'><span>base button<span></button>",
+            },
+            {
+              classNames: ["fxs_btn-transversal"],
+              description:
+                "<p><strong>Transversal Base Rules</strong></p><p>height: 35px<br/>margin: 0<br/>border: 0 solid transparent</p>",
+              example:
+                "<header class='fxs_sectionTitle fxs_sectionTitle_innerDetail fxs_transversal-navigation'><button class='fxs_btn fxs_btn-transversal'><span>transversal base button</span></button></header>",
+            },
+            {
+              classNames: ["fxs_btn-transversal fxs_btn fxs_btn_section"],
+              description:
+                "<p><strong>Transversal section Rules</strong></p><p>background: transparent<br/>font-style: italic<br/>font-size: 1rem</p><p><strong>< 680px Mobile</strong></p><p>font-size: 0.92rem<br/>width: 100%<br/>color: #1b1c23<br/>padding: 0<br/>margin: 0<br/>text-align: left<br/>font-style: italic<br/>font-weight: 500</p><p><strong>>680 Desktop</strong></p><p>color: white</p><p><strong>Rollover State Rules</strong></p><p>border-bottom: 5px solid #dddedf</p>",
+              example:
+                "<header class='fxs_sectionTitle fxs_sectionTitle_innerDetail fxs_transversal-navigation'><button class='fxs_btn fxs_btn-transversal  fxs_btn fxs_btn_section'><span>transversal section button</span></button></header>",
+            },
+            {
+              classNames: [
+                "fxs_btn-transversal fxs_btn fxs_btn_section fxs_active",
+              ],
+              description:
+                "<p><strong>Transversal section Active Rules</strong></p><p>border-bottom: 5px solid #e4871b<br/>background-color: #304c70</p>",
+              example:
+                "<header class='fxs_sectionTitle fxs_sectionTitle_innerDetail fxs_transversal-navigation'><button class='fxs_btn fxs_btn-transversal  fxs_btn fxs_btn_section fxs_active'><span>active transversal section button</span></button></header>",
+            },
+            {
+              classNames: ["fxs_btn-transversal fxs_btn fxs_btn_dropdown"],
+              description:
+                "<p><strong>Transversal dropdown Rules</strong></p><p>color: white<br/>background-color: #304c70</p><p><strong>>680px Desktop</strong></p>font-size: 1rem</p>",
+              example:
+                "<header class='fxs_sectionTitle fxs_sectionTitle_innerDetail fxs_transversal-navigation'><button class='fxs_btn fxs_btn-transversal fxs_btn fxs_btn_dropdown'><span>transversal dropdown button</span><i class='fas fa-caret-down'></i></button></header>",
+            },
+            {
+              classNames: [
+                "fxs_btn-transversal fxs_btn fxs_btn_dropdown fxs_active",
+              ],
+              description:
+                "<p><strong>Active Transversal dropdown Rules</strong></p><p>background-color: white<br/>color: #49494F;</p>",
+              example:
+                "<header class='fxs_sectionTitle fxs_sectionTitle_innerDetail fxs_transversal-navigation'><button class='fxs_btn fxs_btn-transversal fxs_btn fxs_btn_dropdown fxs_active'><span>active transversal dropdown button</span><i class='fas fa-caret-up' > </i></button></header>",
+            },
+            {
+              classNames: [
+                "fxs_section-wrapper fxs_btn-transversal fxs_btn fxs_btn_dropdown",
+              ],
+              description:
+                "<p><strong>Transversal dropdown Rules</strong></p><p>font-style: italic</p><p><strong>< 680 Mobile</strong></p><p>font-weight: 500</p>",
+              example:
+                "<header class='fxs_sectionTitle fxs_sectionTitle_innerDetail fxs_transversal-navigation'><div class='fxs_section-wrapper'><button class='fxs_btn fxs_btn-transversal fxs_btn fxs_btn_dropdown'><span>section transversal dropdown button</span><i class='fas fa-caret-down'></i></button></div></header>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_cta"],
+              description:
+                "<p><strong>CTA Button Rules</strong></p><p>color: #FFF<br/>background-color: #E4871B<br/>border-color: #E4871B<br/></p><p><strong>Rollover State Rules</strong></p><p>background-color: rgba(228, 135, 27, 0.8)<br/>border-color: rgba(228, 135, 27, 0.4)<br/></p><p><strong>Active & focus States</strong></p><p>background-color: rgba(228, 135, 27, 0.8)<br/>>border-color: #9b5c12</p>",
+              example:
+                "<button class='fxs_btn fxs_btn_cta'><span>CTA Button</span></button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_cta fxs_btn fxs_btn_small"],
+              description:
+                "<p><strong>Small CTA Button Rules</strong></p><p>min-height: 27px<br/>line-height: 26px</p>",
+              example:
+                "<button class='fxs_btn fxs_btn_cta fxs_btn_small'><span>Small CTA Button</span></button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_cta fxs_btn fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small CTA Button Rules</strong></p><p>font-size: 0.8rem<br/>line-height: 15px<br/>height: 25px<br/>min-height: 25px<br/></p>",
+              example:
+                "<button class='fxs_btn fxs_btn_cta fxs_btn_xsmall'><span>Extra Small CTA Button</span></button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_cta fxs_btn fxs_btn_large"],
+              description:
+                "<p><strong>Large CTA Button Rules</strong></p><p>font-size: 17.5px<br/>line-height: 54px<br/></p>",
+              example:
+                "<button class='fxs_btn fxs_btn_cta fxs_btn_large'><span>Large CTA Button</span></button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_icon"],
+              description:
+                "<p><strong>Icon Button Rules</strong></p><p>background-color: transparent<br/> border: 1px solid transparent<br/> min-height: 35px<br/> margin: 2px 0<br/> padding: 0 1rem<br/> cursor: pointer<br/> display: inline-block<br/> text-align: center<br/> vertical-align: middle<br/> line-height: 34px<br/>font-size: 1.34rem<br/> width: 35px<br/> padding: 0<br/></p>",
+              example:
+                "<button class='fxs_btn fxs_btn_icon'> <i class='fas fa-angle-double-right'></i> <span class='fxs_skip'>Event Details</span> </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_icon fxs_btn_small"],
+              description:
+                "<p><strong>Small Icon Button Rules</strong></p><p>font-size: 1rem<br/>width: 27px<br/></p>",
+              example:
+                "<button class='fxs_btn fxs_btn_icon fxs_btn_small'> <i class='fas fa-angle-double-right'></i> <span class='fxs_skip'>Event Details</span> </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_line"],
+              description:
+                "<p><strong>Line Button Rules</strong></p><p> color: #1B1C23<br/> border-color: #1B1C23<br/> background-color: transparent<br/> background-color: #FFF<br/> background-color: white<br/> <p><strong>Rollover State Rules</strong></p><p> background-color: rgba(27, 28, 35, 0.15)</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_line'> Button Line </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_line fxs_btn_small"],
+              description:
+                "<p><strong>Small Line Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_line fxs_btn_small'>Small Button Line </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_line fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small Line Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_line fxs_btn_xsmall'>Extra Small Button Line </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_line fxs_btn_large"],
+              description:
+                "<p><strong>Large Line Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_line fxs_btn_large'>Large Button Line </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_line inverse"],
+              description:
+                "<p><strong>Inverse Line Button Rules</strong></p><p>color: #FFF<br/> border-color: #FFF<br/> background-color: transparent</p><p><strong>Rollover State Rules</strong></p><p>background-color: rgba(255, 255, 255, 0.15);</p> ",
+              example:
+                "<div style='background-color:black;padding;20px;text-align:center;'><button class='fxs_btn fxs_btn_line inverse'>Inverse  Button Line </button></div>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_default"],
+              description:
+                "<p><strong>Default Button Rules</strong></p><p>color: #FFF<br/> background-color: #304C70<br/> border-color: #304C70</p><p><strong>Rollover State Rules</strong></p><p>background-color: rgba(48, 76, 112, 0.8)<br/> border-color: rgba(48, 76, 112, 0.4)</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_default'>Default Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_default fxs_btn_small"],
+              description:
+                "<p><strong>Small Default Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_default fxs_btn_small'>Small Button Default </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_default fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small Default Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_default fxs_btn_xsmall'>Extra Small Button Default </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_default fxs_btn_large"],
+              description:
+                "<p><strong>Large Default Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_default fxs_btn_large'>Large Button Default </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_cta"],
+              description:
+                "<p><strong>CTA Button Rules</strong></p><p>color: #FFF<br/> background-color: #E4871B<br/> border-color: #E4871B</p><p><strong>Rollover State Rules</strong></p><p>background-color: rgba(228, 135, 27, 0.8)<br/> border-color: rgba(228, 135, 27, 0.4)</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_cta'>CTA Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_cta fxs_btn_small"],
+              description:
+                "<p><strong>Small CTA Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_cta fxs_btn_small'>Small Button CTA </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_cta fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small CTA Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_cta fxs_btn_xsmall'>Extra Small Button CTA </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_cta fxs_btn_large"],
+              description:
+                "<p><strong>Large CTA Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_cta fxs_btn_large'>Large Button CTA </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_cta disabled"],
+              description:
+                "<p><strong>Disabled CTA Button Rules</strong></p><p>background-color: rgba(228, 135, 27, 0.8)<br/> border-color: rgba(228, 135, 27, 0.4)<br/> cursor: not-allowed</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_cta disabled'>Disabled CTA Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_functional"],
+              description:
+                "<p><strong>Functional Button Rules</strong></p><p>color: #FFF<br/> background-color: #1B1C23<br/> border-color: #1B1C23</p><p><strong>Rollover State Rules</strong></p><p>background-color: rgba(27, 28, 35, 0.8)<br/> border-color: rgba(27, 28, 35, 0.4)</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_functional'>Functional Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_functional fxs_btn_small"],
+              description:
+                "<p><strong>Small Functional Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_functional fxs_btn_small'>Small Button Functional </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_functional fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small Functional Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_functional fxs_btn_xsmall'>Extra Small Button Functional </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_functional fxs_btn_large"],
+              description:
+                "<p><strong>Large Functional Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_functional fxs_btn_large'>Large Button Functional </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_danger"],
+              description:
+                "<p><strong>Danger Button Rules</strong></p><p>color: #FFF<br/> background-color: #D25746<br/> border-color: #D25746<br/></p><p><strong>Rollover State Rules</strong></p><p>background-color: rgba(210, 87, 70, 0.8)<br/> border-color: rgba(210, 87, 70, 0.4)<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_danger'>Danger Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_danger fxs_btn_small"],
+              description:
+                "<p><strong>Small Danger Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_danger fxs_btn_small'>Small Button Danger </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_danger fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small Danger Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_danger fxs_btn_xsmall'>Extra Small Button Danger </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_danger fxs_btn_large"],
+              description:
+                "<p><strong>Large Danger Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_danger fxs_btn_large'>Large Button Danger </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_success"],
+              description:
+                "<p><strong>Success Button Rules</strong></p><p>color: #FFF<br/> background-color: #338473<br/> border-color: #338473<br/></p><p><strong>Rollover State Rules</strong></p><p>background-color: rgba(51, 132, 115, 0.8)<br/> border-color: rgba(51, 132, 115, 0.4)<br/><br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_success'>Success Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_success fxs_btn_small"],
+              description:
+                "<p><strong>Small Success Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_success fxs_btn_small'>Small Button Success </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_success fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small Success Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_success fxs_btn_xsmall'>Extra Small Button Success </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_success fxs_btn_large"],
+              description:
+                "<p><strong>Large Success Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_success fxs_btn_large'>Large Button Success </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_light"],
+              description:
+                "<p><strong>Light Button Rules</strong></p><p>color: #FFF<br/> background-color: #04aab2<br/> border-color: #04aab2<br/></p><p><strong>Rollover State Rules</strong></p><p>background-color: rgba(4, 170, 178, 0.8)<br/> border-color: rgba(4, 170, 178, 0.4)<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_light'>Light Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_light fxs_btn_small"],
+              description:
+                "<p><strong>Small Light Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_light fxs_btn_small'>Small Button Light </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_light fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small Light Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_light fxs_btn_xsmall'>Extra Small Button Light </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_light fxs_btn_large"],
+              description:
+                "<p><strong>Large Light Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_light fxs_btn_large'>Large Button Light </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_content_toggle"],
+              description:
+                "<p><strong>Content Toggle Button Rules</strong></p><p>border-top: 1px solid #A3A3A8<br/> color: #8C8D91<br/> font-size: 0.8rem<br/> text-transform: uppercase<br/></p><p><strong>Rollover State Rules</strong></p><p>color: #49494F<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_content_toggle'>Content Toggle Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_content_toggle fxs_btn_small"],
+              description:
+                "<p><strong>Small Content Toggle Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_content_toggle fxs_btn_small'>Small Button Content Toggle </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_content_toggle fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small Content Toggle Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_content_toggle fxs_btn_xsmall'>Extra Small Button Content Toggle </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_content_toggle fxs_btn_large"],
+              description:
+                "<p><strong>Large Content Toggle Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_content_toggle fxs_btn_large'>Large Button Content Toggle </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_phantom"],
+              description:
+                "<p><strong>Phantom Button Rules</strong></p><p>color: #1B1C23<br/> margin: 0<br/> padding: 0 7.5px<br/></p><p><strong>Rollover State Rules</strong></p><p>background-color: #DDDEDF<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_phantom'>Phantom Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_phantom fxs_btn_small"],
+              description:
+                "<p><strong>Small Phantom Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_phantom fxs_btn_small'>Small Button Phantom </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_phantom fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small Phantom Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_phantom fxs_btn_xsmall'>Extra Small Button Phantom </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_phantom fxs_btn_large"],
+              description:
+                "<p><strong>Large Phantom Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_phantom fxs_btn_large'>Large Button Phantom </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_transparent"],
+              description:
+                "<p><strong>Transparent Button Rules</strong></p><p>border: 0 solid transparent<br/> padding: 0<br/> white-space: nowrap<br/> border: 0<br/> background-color: transparent<br/></p><p><strong>Rollover State Rules</strong></p><p>text-decoration: underline<br/> background-color: transparent<br/> border: 0<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_transparent'>Transparent Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_transparent fxs_btn_small"],
+              description:
+                "<p><strong>Small Transparent Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_transparent fxs_btn_small'>Small Button Transparent </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_transparent fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small Transparent Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_transparent fxs_btn_xsmall'>Extra Small Button Transparent </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_transparent fxs_btn_large"],
+              description:
+                "<p><strong>Large Transparent Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_transparent fxs_btn_large'>Large Button Transparent </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_anchor"],
+              description:
+                "<p><strong>Transparent Button Rules</strong></p><p>color: #E4871B<br/> border: 0 solid transparent<br/> padding: 0<br/> white-space: nowrap<br/> border: 0<br/> background-color: transparent<br/></p><p><strong>Rollover State Rules</strong></p><p>text-decoration: underline<br/> background-color: transparent<br/> border: 0<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_anchor'>Transparent Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_anchor fxs_btn_small"],
+              description:
+                "<p><strong>Small Transparent Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_anchor fxs_btn_small'>Small Button Transparent </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_anchor fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small Transparent Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_anchor fxs_btn_xsmall'>Extra Small Button Transparent </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_anchor fxs_btn_large"],
+              description:
+                "<p><strong>Large Transparent Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_anchor fxs_btn_large'>Large Button Transparent </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_grey"],
+              description:
+                "<p><strong>Grey Button Rules</strong></p><p>color: #FFF<br/> background-color: #49494F<br/> border-color: #49494F<br/></p><p><strong>Rollover State Rules</strong></p><p>background-color: rgba(73, 73, 79, 0.8)<br/> border-color: rgba(73, 73, 79, 0.4)<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_grey'>Grey Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_grey fxs_btn_small"],
+              description:
+                "<p><strong>Small Grey Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_grey fxs_btn_small'>Small Button Grey </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_grey fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small Grey Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_grey fxs_btn_xsmall'>Extra Small Button Grey </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_grey fxs_btn_large"],
+              description:
+                "<p><strong>Large Grey Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_grey fxs_btn_large'>Large Button Grey </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_table_filter"],
+              description:
+                "<p><strong>Table Filter Button Rules</strong></p><p>color: #49494F<br/> background-color: #ECECF1<br/> border-color: #DDDEDF<br/></p><p><strong>Rollover State Rules</strong></p><p>background-color: rgba(236, 236, 241, 0.8)<br/> border-color: rgba(221, 222, 223, 0.4)<br/>color: #49494F<br/> background-color: #A3A3A8<br/> border-color: #DDDEDF<br/>background-color: rgba(163, 163, 168, 0.8)<br/> border-color: rgba(221, 222, 223, 0.4)<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_table_filter'>Table Filter Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_table_filter fxs_btn_small"],
+              description:
+                "<p><strong>Small Table Filter Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_table_filter fxs_btn_small'>Small Button Table Filter </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_table_filter fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small Table Filter Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_table_filter fxs_btn_xsmall'>Extra Small Button Table Filter </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_table_filter fxs_btn_large"],
+              description:
+                "<p><strong>Large Table Filter Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_table_filter fxs_btn_large'>Large Button Table Filter </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_cancel"],
+              description:
+                "<p><strong>Cancel Button Rules</strong></p><p>color: #E4871B<br/> background-color: #FFF<br/> border-color: #FFF<br/></p><p><strong>Rollover State Rules</strong></p><p>background-color: rgba(255, 255, 255, 0.8)<br/> border-color: rgba(255, 255, 255, 0.4)<br/>text-decoration: underline !important<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_cancel'>Cancel Button</button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_cancel fxs_btn_small"],
+              description:
+                "<p><strong>Small Cancel Button Rules</strong></p><p>min-height: 27px<br/> line-height: 26px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_cancel fxs_btn_small'>Small Button Cancel </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_cancel fxs_btn_xsmall"],
+              description:
+                "<p><strong>Extra Small Cancel Button Rules</strong></p><p>font-size: 0.8rem<br/> line-height: 15px<br/> height: 25px<br/> min-height: 25px<br/>padding: 0 8px<br/></p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_cancel fxs_btn_xsmall'>Extra Small Button Cancel </button>",
+            },
+            {
+              classNames: ["fxs_btn fxs_btn_cancel fxs_btn_large"],
+              description:
+                "<p><strong>Large Cancel Button Rules</strong></p><p>font-size: 17.5px<br/> line-height: 54px</p> ",
+              example:
+                "<button class='fxs_btn fxs_btn_cancel fxs_btn_large'>Large Button Cancel </button>",
+            },
+          ],
+        },
+      ];
+    </script>
+    <script id="template" type="x-tmpl-mustache">
+      <div class="fxs_marginBase_big fxs_clearfix"></div> <h1 class="fxs_txt_center">COMPONENTS</h1> {{#.}} <div id="{{id}}" class="fxs_marginBase_big fxs_clearfix"></div> <div class="fxs_marginBase_big fxs_clearfix"></div> <h2 class="fxs_txt_center">{{label}}</h2> {{#haveSections}} <div class="fxs_marginBase_big fxs_clearfix"></div> <table class="fxs_table"> <thead> <tr> <th>Class Names</th> <th>Description</th> <th>Example</th> </tr> </thead> <tbody> {{/haveSections}} {{#sections}} <tr> <td><ul>{{#classNames}}<li>{{.}}</li>{{/classNames}}</ul></td> <td>{{{description}}}</td> <td>{{{example}}}</td> </tr> {{/sections}} {{#haveSections}} <div class="fxs_marginBase_big fxs_clearfix"></div> </tbody> </table> {{/haveSections}} {{#subsections}} <div  id="{{id}}" class="fxs_marginBase_big fxs_clearfix"></div> <div class="fxs_marginBase_big fxs_clearfix"></div> <table class="fxs_table"> <caption><h2>{{label}}</h2></caption> <tr> <th>Class Names</th> <th>Description</th> <th>Example</th> </tr> {{#items}} <tr> <td><ul>{{#classNames}}<li>{{.}}</li>{{/classNames}}</ul></td> <td>{{{description}}}</td> <td>{{{example}}}</td> </tr> {{/items}} </table> {{/subsections}} {{/.}} <div class="fxs_lateral-menu"> {{#.}} <a href="#{{id}}" class="fxs_txt_center">{{label}}</a> <ul> {{#subsections}} <li> <a href="#{{id}}">{{label}}</a> </li> {{/subsections}} </ul> {{/.}} </div>
+    </script>
+    <script>
+      var template = document.getElementById("template").innerHTML;
+      var rendered = Mustache.render(template, components);
+      document.getElementById("content").innerHTML = rendered;
+    </script>
+  </body>
+</html>

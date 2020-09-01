@@ -136,30 +136,24 @@
           haveSections: true,
           sections: [
             {
-              
-              classNames: ["fxs_divider_wide"],
-              description: "<p><strong>< 680px Mobile</strong></p><p>background-color: #ececf1;<br/>height: 7px;<br/>margin-top: 1rem;<br/>margin-bottom: 1rem;</p><p><strong>>680 Desktop</strong></p><p>background-color: #ececf1;<br/>height: 7px;<br/>margin-top: 1rem;<br/>margin-bottom: 2rem;</p>",
-              example:"<hr class='fxs_divider_wide'></hr>"
+              classNames: ["fxs_list_unstyled"],
+              description: "<p><strong>Mobile & Desktop</strong></p><p>margin:0;<br/>padding:0;<br/>list-style: none;</p>",
+              example:"<ul class='fxs_list_unstyled'><li>fxs_list_unstyled</li><li>fxs_list_unstyled</li><li>fxs_list_unstyled</li></ul>"
             },
             {
-              classNames: ["fxs_divider_first"],
-              description: "<p><strong>Mobile & Desktop</strong></p><p>background-color: #ECECF1;<br/>margin-bottom: 1rem;<br/>width: 100%;<br/>height: 3px;</p>",
-              example:"<hr class='fxs_divider_first'></hr>"
+              classNames: ["fxs_list_unstyled fxs_list_nearby_bullets"],
+              description: "<p><strong>Mobile & Desktop</strong></p><p> li </p><p>position:relative;<br/>margin-left:.5rem;<p>li::before</p>content:'2022;</br>position:absolute;</br>width:1rem;</br>left:-.5rem;</p>",
+              example:"<ul class='fxs_list_unstyled fxs_list_nearby_bullets'><li>fxs_list_nearby_bullets</li><li>fxs_list_nearby_bullets</li><li>fxs_list_nearby_bullets</li></ul>"
             },
             {
-              classNames: ["fxs_divider_second"],
-              description: "<p><strong>Mobile & Desktop</strong></p><p>background-color: #ECECF1;<br/>margin-bottom: 1rem;<br/>width: 100%;<br/>height: 2px;</p>",
-              example:"<hr class='fxs_divider_second'></hr>"
+              classNames: ["fxs_add_separator"],
+              description: "<p><strong>Mobile & Desktop</strong></p><p>li:after</p>content:',';</p>",
+              example:"<ul class='fxs_list_unstyled fxs_list_nearby_bullets'><li>fxs_list_nearby_bullets</li><li>fxs_list_nearby_bullets</li><li>fxs_list_nearby_bullets</li></ul>"
             },
             {
-              classNames: ["fxs_divider_third"],
-              description: "<p><strong>Mobile & Desktop</strong></p><p>background-color: #ECECF1;<br/>margin-bottom: 1rem;<br/>width: 100%;<br/>height: 1px;</p>",
-              example:"<hr class='fxs_divider_third'></hr>"
-            },
-            {
-              classNames: ["fxs_dateIndicator_divider"],
-              description: "<p><strong>Mobile & Desktop</strong></p><p>background-color: #F3F3F8;<br/>color: #49494f;<br/>font-size: 0.8rem<br/>padding: 0.33rem 1rem;</p>",
-              example:"<hr class='fxs_dateIndicator_divider'></hr>"
+              classNames: ["fxs_subnavInlined_list"],
+              description: "<p><strong>Mobile & Desktop</strong></p><p>font-size: 11px;</p>",
+              example:"<ul class='fxs_subnavInlined_list'> <li>fxs_subnavInlined_list</li> <li>fxs_subnavInlined_list</li><li>fxs_subnavInlined_list</li></ul>"
             }
           ],
         }
