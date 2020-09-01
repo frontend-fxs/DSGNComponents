@@ -70,6 +70,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <div class="fxs_bgHeader">
       <div class="fxs_staticHeader">
@@ -96,14 +97,76 @@
                         >Utilities
                       </a>
                     </li>
-                    <li class="active">
-                      <a
-                        class="fxs_nav_main_menu_desktop"
-                        href="./components.html"
-                        >Components
-                      </a>
+                    <li fxs-section-entry class="active">
+                      <a fxs-desktop-menu-entry class="fxs_nav_main_menu_desktop">Components </a>
+                      <div class="fxs_nav_itemsContainer fxs_hideElements">
+                        <div class="fxs_navBg">
+                          <div class="fxs_subNav_rates">
+                            <div class="fxs_navItemsBox">
+                              <ul class="fxs_subNav_col_2 fxs_list_unstyled">
+                                <li>
+                                  <i
+                                    class="fas fa-angle-right"
+                                    aria-hidden="true"
+                                  ></i>
+                                  <a
+                                    fxs-desktop-menu-item-entry=""
+                                    href="components-buttons.html"
+                                    >Buttons
+                                    <span
+                                      class="fxs_label fxs_label_highlight"
+                                    ></span
+                                  ></a>
+                                </li>
+                                <li>
+                                  <i
+                                    class="fas fa-angle-right"
+                                    aria-hidden="true"
+                                  ></i>
+                                  <a
+                                    fxs-desktop-menu-item-entry=""
+                                    href="components-divider.html"
+                                    >Dividers
+                                    <span
+                                      class="fxs_label fxs_label_highlight"
+                                    ></span
+                                  ></a>
+                                </li>
+                                <li>
+                                  <i
+                                    class="fas fa-angle-right"
+                                    aria-hidden="true"
+                                  ></i>
+                                  <a
+                                    fxs-desktop-menu-item-entry=""
+                                    href="components-list.html"
+                                    >Lists
+                                    <span
+                                      class="fxs_label fxs_label_highlight"
+                                    ></span
+                                  ></a>
+                                </li>
+                                <li>
+                                  <i
+                                    class="fas fa-angle-right"
+                                    aria-hidden="true"
+                                  ></i>
+                                  <a
+                                    fxs-desktop-menu-item-entry=""
+                                    href="components-title.html"
+                                    >Titles
+                                    <span
+                                      class="fxs_label fxs_label_highlight"
+                                    ></span
+                                  ></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </li>
-                    <li>
+                      <li>
                       <a
                         class="fxs_nav_main_menu_desktop"
                         href="./templating.html"
@@ -121,7 +184,9 @@
     <div class="fxs_wrapper fxs_content_wide">
       <div class="fxs_content">
         <div class="fxs_contentView">
-          <div class="fxs_detail"><div id="content"></div></div>
+          <div class="fxs_detail">
+            <div id="content"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -144,7 +209,7 @@
               description:
                 "<p><strong>Transversal Base Rules</strong></p><p>height: 35px<br/>margin: 0<br/>border: 0 solid transparent</p>",
               example:
-                "<header class='fxs_sectionTitle fxs_sectionTitle_innerDetail fxs_transversal-navigation'><button class='fxs_btn fxs_btn-transversal'><span>transversal base button</span></button></header><br/> <a target='_blank' href='https://www.fxstreet.com/currencies/eurusd'>https://www.fxstreet.com/currencies/eurusd</a><br> <a target='_blank' href='https://www.fxstreet.com/currencies/gbpusd'>https://www.fxstreet.com/currencies/gbpusd</a><br> <a target='_blank' href='https://www.fxstreet.com/markets/commodities/metals/gold'>https://www.fxstreet.com/markets/commodities/metals/gold</a><br> <a target='_blank' href='https://www.fxstreet.com/currencies/usdjpy'>https://www.fxstreet.com/currencies/usdjpy</a><br> <a target='_blank' href='https://www.fxstreet.com/markets/commodities/energy/oil'>https://www.fxstreet.com/markets/commodities/energy/oil</a><br> <a target='_blank' href='https://www.fxstreet.com/currencies/audusd'>https://www.fxstreet.com/currencies/audusd</a><br> <a target='_blank' href='https://www.fxstreet.com/currencies/usdcad'>https://www.fxstreet.com/currencies/usdcad</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/sp500'>https://www.fxstreet.com/rates-charts/sp500</a><br> <a target='_blank' href='https://www.fxstreet.com/cryptocurrencies/bitcoin'>https://www.fxstreet.com/cryptocurrencies/bitcoin</a><br> <a target='_blank' href='https://www.fxstreet.com/cryptocurrencies/ethereum'>https://www.fxstreet.com/cryptocurrencies/ethereum</a><br> <a target='_blank' href='https://www.fxstreet.com/cryptocurrencies/ripple'>https://www.fxstreet.com/cryptocurrencies/ripple</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/ethusd'>https://www.fxstreet.com/rates-charts/ethusd</a><br> <a target='_blank' href='https://www.fxstreet.com/currencies/eurgbp'>https://www.fxstreet.com/currencies/eurgbp</a><br> <a target='_blank' href='https://www.fxstreet.com/cryptocurrencies/litecoin'>https://www.fxstreet.com/cryptocurrencies/litecoin</a><br> <a target='_blank' href='https://www.fxstreet.com/cryptocurrencies/bitcoin-cash'>https://www.fxstreet.com/cryptocurrencies/bitcoin-cash</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/eurusd'>https://www.fxstreet.com/rates-charts/eurusd</a><br> <a target='_blank' href='https://www.fxstreet.com/currencies/us-dollar-index'>https://www.fxstreet.com/currencies/us-dollar-index</a><br> <a target='_blank' href='https://www.fxstreet.com/currencies/nzdusd'>https://www.fxstreet.com/currencies/nzdusd</a><br> <a target='_blank' href='https://www.fxstreet.com/currencies/usdchf'>https://www.fxstreet.com/currencies/usdchf</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/dowjonesindustrials'>https://www.fxstreet.com/rates-charts/dowjonesindustrials</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/gbpusd'>https://www.fxstreet.com/rates-charts/gbpusd</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/dollarindexspot'>https://www.fxstreet.com/rates-charts/dollarindexspot</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/usdbrl'>https://www.fxstreet.com/rates-charts/usdbrl</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/usdrub'>https://www.fxstreet.com/rates-charts/usdrub</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/usdjpy'>https://www.fxstreet.com/rates-charts/usdjpy</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/audusd'>https://www.fxstreet.com/rates-charts/audusd</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/nzdusd'>https://www.fxstreet.com/rates-charts/nzdusd</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/usdcad'>https://www.fxstreet.com/rates-charts/usdcad</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/gbpjpy'>https://www.fxstreet.com/rates-charts/gbpjpy</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/eurjpy'>https://www.fxstreet.com/rates-charts/eurjpy</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/xagusd'>https://www.fxstreet.com/rates-charts/xagusd</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/westtexasintermediate'>https://www.fxstreet.com/rates-charts/westtexasintermediate</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/eurgbp'>https://www.fxstreet.com/rates-charts/eurgbp</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/usdchf'>https://www.fxstreet.com/rates-charts/usdchf</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/usdinr'>https://www.fxstreet.com/rates-charts/usdinr</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/usdtry'>https://www.fxstreet.com/rates-charts/usdtry</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/nikkei225'>https://www.fxstreet.com/rates-charts/nikkei225</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/brentoil'>https://www.fxstreet.com/rates-charts/brentoil</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/rbob(gasoline)'>https://www.fxstreet.com/rates-charts/rbob(gasoline)</a><br> <a target='_blank' href='https://www.fxstreet.com/rates-charts/xauusd'>https://www.fxstreet.com/rates-charts/xauusd</a><br> <a target='_blank' href='https://www.fxstreet.com/technical-studies/currencies/gbpusd/'>https://www.fxstreet.com/technical-studies/currencies/gbpusd/</a><br> ",
+                "<header class='fxs_sectionTitle fxs_sectionTitle_innerDetail fxs_transversal-navigation'><button class='fxs_btn fxs_btn-transversal'><span>transversal base button</span></button></header>",
             },
             {
               classNames: ["fxs_btn-transversal fxs_btn fxs_btn_section"],
