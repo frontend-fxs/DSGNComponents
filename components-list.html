@@ -204,15 +204,30 @@
             },
             {
               classNames: ["fxs_list_unstyled fxs_list_nearby_bullets"],
-              description: "<p><strong>Mobile & Desktop</strong></p><p> li </p><p>position:relative;<br/>margin-left:.5rem;<p>li::before</p>content:'2022;</br>position:absolute;</br>width:1rem;</br>left:-.5rem;</p>",
+              description: "<p><strong>Mobile & Desktop</strong></p><p><strong>li</strong></br>position:relative;<br/>margin-left:.5rem;</br><strong>li::before</strong></br>content:'2022;</br>position:absolute;</br>width:1rem;</br>left:-.5rem;</p>",
               example:"<ul class='fxs_list_unstyled fxs_list_nearby_bullets'><li>fxs_list_nearby_bullets</li><li>fxs_list_nearby_bullets</li><li>fxs_list_nearby_bullets</li></ul>"
             },
             {
               classNames: ["fxs_add_separator"],
-              description: "<p><strong>Mobile & Desktop</strong></p><p>li:after</p>content:',';</p>",
-              example:"<ul class='fxs_list_unstyled fxs_list_nearby_bullets'><li>fxs_list_nearby_bullets</li><li>fxs_list_nearby_bullets</li><li>fxs_list_nearby_bullets</li></ul>"
+              description: "<p><strong>Mobile & Desktop</strong></p><p><strong>li:after</strong></br>content:',';</br><strong>li:last-child:after</strong></br>content:'';</p>",
+              example:"<ul class='fxs_add_separator'><li>fxs_add_separator</li><li>fxs_add_separator</li><li>fxs_add_separator</li></ul>"
             },
-          
+            {
+              classNames: ["fxs_plainInlined_list"],
+              description: "<p><strong>Mobile & Desktop</strong></p><p>margin:0;<br/>padding:0;<br/>list-style: none;</br>display: inline-block;</br>vertical-align:middle</br><strong>> li</strong></br>display:inline-block;</br>padding-right:5px;</p>",
+              example:"<ul class='fxs_plainInlined_list'> <li>fxs_plainInlined_list</li> <li>fxs_plainInlined_list</li><li>fxs_plainInlined_list</li></ul>"
+            },
+
+            {
+              classNames: ["fxs_inlined_definition_list"],
+              description: "<p><strong>Mobile & Desktop</strong></p><p>margin:0;<br/>padding:0;<br/>list-style: none;</br>display:table-row;</br><strong>dt</strong></br>text-align:right;</br>width:25%;</br><strong>dt,dd</strong></br>display:table-cell;</br>vertical-align:top;</br><strong>dd</strong></br>padding-left:1rem;</p>",
+              example:"<dl class='fxs_inlined_definition_lists'> <dt>fxs_inlined_definition_list</dt> <dd>fxs_inlined_definition_list</dd> <dt>fxs_inlined_definition_list</dt> <dd>fxs_inlined_definition_list</dd> </dl>"
+            },
+            {
+              classNames: ["fxs_list_table"],
+              description: "<p><strong>Mobile & Desktop</strong></p><p>margin:0;<br/>padding:0;<br/>list-style: none;</br>margin-bottom:1rem;</br><strong>fxs_list_table_item</strong></br>display:table;</br>width:100%;</br>padding:0.5rem;</br>border-top:1px solid #ECECF1;</br><strong>fxs_list_table_item:first-child</strong></br>border-top:none;</p>",
+              example:"<ul class='fxs_list_table'> <li class='fxs_list_table_item'>fxs_list_table</li> <li class='fxs_list_table_item'>fxs_list_table</li><li class='fxs_list_table_item'>fxs_list_table</li></ul>"
+            }
           ],
         }
       ]
