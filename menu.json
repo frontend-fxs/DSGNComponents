@@ -1,0 +1,23 @@
+{
+  "entrySections": [
+    {
+      "name": "Intro",
+      "url": "./index.html"
+    },
+    {
+      "name": "Utilities",
+      "url": "./utilities.html"
+    },
+    {
+      "name": "Components",
+      "url": "",
+      "hasSubsections": true,
+      "subsections": [
+        {
+          "name": "Buttons",
+          "url": "components-buttons.html"
+        }
+      ]
+    }
+  ]
+}

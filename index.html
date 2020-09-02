@@ -52,9 +52,7 @@
       href="https://staticcontent.fxstreet.com/website/css/fxs_screen.css"
       rel="stylesheet"
     />
-    <title>
-      FXStreet - The Foreign Exchange Market
-    </title>
+    <title>FXStreet - The Foreign Exchange Market</title>
     <meta name="lang" content="en" />
     <meta
       name="description"
@@ -69,6 +67,10 @@
         height: auto;
       }
     </style>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+       <script src="./renderMenu.js"> </script>
+
+
   </head>
 
   <body>
@@ -83,24 +85,29 @@
           <div id="fxs_nav_position" class="fxs_clearfix fxs_navControl">
             <div class="fxs_navBg">
               <div id="fxs_it_horizontalMenu">
+                <script>renderMenu('hola mundo')</script>
                 <nav class="fxs_nav_menu fxs_main_nav" role="navigation">
                   <ul>
                     <li class="active">
-                      <a class="fxs_nav_main_menu_desktop " href="./index.html"
+                      <a class="fxs_nav_main_menu_desktop" href="./index.html"
                         >Intro</a
                       >
                     </li>
 
                     <li>
                       <a
-                        class="fxs_nav_main_menu_desktop "
+                        class="fxs_nav_main_menu_desktop"
                         href="./utilities.html"
                         >Utilities
                       </a>
                     </li>
 
                     <li fxs-section-entry>
-                      <a fxs-desktop-menu-entry class="fxs_nav_main_menu_desktop">Components </a>
+                      <a
+                        fxs-desktop-menu-entry
+                        class="fxs_nav_main_menu_desktop"
+                        >Components
+                      </a>
                       <div class="fxs_nav_itemsContainer fxs_hideElements">
                         <div class="fxs_navBg">
                           <div class="fxs_subNav_rates">
@@ -170,7 +177,7 @@
                     </li>
                     <li>
                       <a
-                        class="fxs_nav_main_menu_desktop "
+                        class="fxs_nav_main_menu_desktop"
                         href="./templating.html"
                         >Templating
                       </a>
