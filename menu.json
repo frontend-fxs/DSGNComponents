@@ -16,6 +16,18 @@
         {
           "name": "Buttons",
           "url": "components-buttons.html"
+        },
+        {
+          "name": "Dividers",
+          "url": "components-divider.html"
+        },
+        {
+          "name": "Lists",
+          "url": "components-list.html"
+        },
+        {
+          "name": "Titles",
+          "url": "components-title.html"
         }
       ]
     }

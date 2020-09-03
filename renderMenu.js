@@ -11,7 +11,9 @@ function renderMenu(active) {
   const template = fetch("./menu.mst").then((response) => response.text());
   Promise.all([data, template])
     .then((response) => {
+      console.log(response);
       resolvedData = response[0];
+      resolvedData = setActiveItem(active,resolvedData);
       resolvedTemplate = response[1];
       Mustache.parse(resolvedTemplate);
       var output = Mustache.render(resolvedTemplate, resolvedData);
