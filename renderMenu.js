@@ -4,6 +4,7 @@ function setActiveItem(active,resolvedData){
             resolvedData.entrySections[i].active=true;
         }
     }
+    return resolvedData;
 }
 
 function renderMenu(active) {
