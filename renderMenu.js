@@ -1,7 +1,7 @@
 function setActiveItem(active,resolvedData){
-    for(var i = 0; i < resolvedData.entrySections.lenght;i++){
-        if(resolvedData.entrySections[i].name===value){
-            resolvedData.entrySections[i].active=true;
+    for(var i = 0; i < resolvedData.entrySections.length;i++){
+        if(resolvedData.entrySections[i].name===active){
+            resolvedData.entrySections[i] = {...resolvedData.entrySections[i], active:true};
         }
     }
     return resolvedData;

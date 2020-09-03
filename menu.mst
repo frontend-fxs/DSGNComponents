@@ -1,7 +1,7 @@
 <nav class="fxs_nav_menu fxs_main_nav" role="navigation">
     <ul>
     {{#entrySections}}
-    <li fxs-section-entry class="{{active}}">
+    <li fxs-section-entry class="{{#active}}active{{/active}}">
         <a fxs-desktop-menu-entry class="fxs_nav_main_menu_desktop" href="{{url}}"
         >{{name}}</a
         >
